@@ -1,0 +1,175 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import 'https://fonts.googleapis.com/css2?family=Roboto&display=swap';
+
+*:focus {
+  outline: none;
+}
+
+input {
+  background: #333;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+  color: #fafafa;
+}
+
+textarea {
+  background: #333;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+  color: #fafafa;
+}
+
+body {
+  background-color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  text-align: left;
+list-style-type: none;
+}
+
+hr {
+  width: 90%;
+  color: white;
+  height: 1px;
+}
+
+h1 {
+  color: #fafafa;
+}
+
+.img-slide {
+  margin-top: 60px;
+  max-width: 1600px;
+  width: 100%;
+}
+
+.container#content {
+    margin-top: 60px;
+    margin-bottom: 100px;
+    background: white;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+  
+  .navbar {
+    background-color: #000;
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    line-height: 1;
+
+  }
+  .navbar-dark .navbar-nav .nav-link,
+  .navbar-dark .navbar-brand {
+    color: #fafafa;
+    &:hover {
+      color: gray;
+    }
+
+    button.navbar-toggler {
+      border: 1px solid #fafafa;
+   }
+
+   .navbar-toggler-icon {
+      padding: 3px;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+   }
+  }
+
+   .index-card {
+    max-width: 300px;
+
+   }
+   
+  .card {
+    border: none;
+    background: black;
+    color: #fafafa;
+    min-height: 486px; 
+
+    &.index-card:hover {
+      opacity: 0.9;
+    }
+
+  }
+
+  .full-page {
+    margin-top: 60px;
+    min-height: 100vh;
+  }
+
+  .contest-page ul {
+    list-style-type: disc;
+  }
+
+  .contest-page li {
+    margin-bottom: 10px;
+  }
+
+  .contact-ul li {
+    display: inline;
+    margin: 10px; 
+  }
+
+  .contact-ul a {
+    color: #fafafa;
+  }
+
+  .product-card {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .ul-order {
+    list-style-type: disc;
+  }
+  
+
+  .site-footer {
+    background: #000;
+    color: #fafafa;
+    margin-top: 20px;
+    padding: 10px;
+    min-height: 150px;
+  }
+
+  .footer-ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+
+    li {
+      display: inline;
+      margin:  10px;
+    }
+
+    a {
+      color: #fafafa;
+    }
+
+    a:hover {
+      color: gray;
+    }
+  }
+
+  @media (max-width: 576px) {
+
+    .product-card {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+  }
+
+
+

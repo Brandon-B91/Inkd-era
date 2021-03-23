@@ -3,26 +3,21 @@ import Layout from "../components/Layout";
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
 import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
-import ImgSlide from "../components/Slider";
 import "../styles/main.scss";
 
-const IndexPage = ({ data }) => {
+const WomensStyles = ({ data }) => {
   return (
     <Layout>
-      <div className="img-slide">
-        <ImgSlide></ImgSlide>
-      </div>
+
       {/* <h1>{data.site.siteMetadata.title}</h1> */}
-      <h2 className="text-light mt-3 mb-4">Newest Arrivals! </h2>
+      <h2 className="text-light mt-5 mb-4">Womens Styles </h2>
       <div>
         {data.allMarkdownRemark.edges.map(({ node }) => {
           const image = getImage(node.frontmatter.image);
           return (
             <div className="d-inline-flex">
               <div className="flex-row">
-                <Card className="m-2 index-card"
-                key={node.id}
-                >
+                <Card className="m-2 index-card">
                   <Link to={node.fields.slug}>
                     <GatsbyImage
                       className="card-img-top"
@@ -76,7 +71,7 @@ export const query = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC } filter: { frontmatter: { gender: { eq: "female" }}}) {
       totalCount
       edges {
         node {
@@ -108,4 +103,4 @@ export const query = graphql`
   }
 `;
 
-export default IndexPage;
+export default WomensStyles;
