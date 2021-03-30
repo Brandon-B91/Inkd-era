@@ -60,6 +60,7 @@ const Header = (props) => {
             </Nav>
           </Collapse>
         </div>
+        <button className="snipcart-checkout" style={{border: "none", background: "none", color: "#fafafa"}}><i class="fas fa-shopping-cart" style={{color: "white"}}></i><span className="snipcart-total-price ml-1"></span></button>
       </Navbar>
     </div>
   );

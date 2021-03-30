@@ -2,6 +2,7 @@ import Header from "./Header";
 import Footer from "./Footer"
 import React from "react";
 import "../styles/main.scss";
+import "../styles/cart.css";
 
 const Layout = ({ children }) => {
   return (

@@ -26,7 +26,7 @@ function Email() {
       </p>
       <div>
         <Input
-        style={{width: "70%", margin: "0 auto"}}
+        style={{width: "70%", margin: "0 auto", maxWidth: "500px"}}
           className="email-form"
           type="email"
           onChange={handleChange}

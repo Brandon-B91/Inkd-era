@@ -1,0 +1,27 @@
+
+.snipcart-cart-header {
+    background: #333 !important;
+}
+
+.snipcart-layout {
+    background: #333 !important;
+}
+ 
+ .snipcart-modal {
+      margin: 50px auto !important;
+
+  }
+
+  .snipcart-cart-header__close-button .snipcart-modal__close {
+      color: #fafafa !important;
+  }
+
+  .snipcart-cart-button {
+      background-image: linear-gradient(90deg, #333,gray)!important;
+  }
+
+  .snipcart-cart-button--secondary {
+      color: white !important;
+      background: #000 !important;
+  }
+

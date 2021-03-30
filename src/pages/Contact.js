@@ -17,7 +17,7 @@ const Contact = (props) => {
             suggestion concerns or even to comment on something or course for
             order status as well!
           </p>
-          <ul className="contact-ul text-center">
+          <ul className="contact-ul text-center mt-4">
             <li>
               <a
                 href="http://instagram.com/inkd_era"
@@ -28,6 +28,26 @@ const Contact = (props) => {
                 <i className="fab fa-instagram fa-2x"></i>
               </a>
             </li>
+            <li>
+          <a
+            href="https://twitter.com/inkd_era"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="twitter"
+          >
+            <i className="fab fa-twitter fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://facebook.com/inkd_era"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="facebook"
+          >
+            <i className="fab fa-facebook-f fa-2x"></i>
+          </a>
+        </li>
             <li>
               <a
                 href="mailto:customerservice@inkdera.com"
@@ -40,26 +60,31 @@ const Contact = (props) => {
             </li>
             <li></li>
           </ul>
-          <h4 className="mt-3">
+          <h4 className="mt-4">
             {" "}
             Something a little more complicated? fill out this form!{" "}
           </h4>
-          <form name="Contact Form" method="POST" data-netlify="true" action="/Thanks" className="contact-form">
+          <form name="Contact Form" method="POST" data-netlify="true" action="/Thanks" className="contact-form mt-4">
             <input type="hidden" name="form-name" value="Contact Form" />
             <div>
-                <label className="mr-3">Your Name:</label>
+                <label className="mr-3">Your Name:<span className="text-danger">&#42;</span></label>
                 <input type="name" />
             </div>
             <div>
-              <label className="mr-">Your Email:</label>
+              <label className="mr-3">Your Email:<span className="text-danger">&#42;</span></label>
               <input type="email" name="email" />
             </div>
             <div>
-              <label className="mr-3">Message:</label>
+              <label className="mr-4">Message:<span className="text-danger">&#42;</span></label>
               <textarea name="message" />
             </div>
-            <button type="submit">Send</button>
+            <button type="submit" className="btn btn-danger mt-3" style={{width: "50%", margin: "0 auto"}}>Send</button>
+            <p className="mt-2" style={{fontSize: "12px", marginRight: "50%"}}> <span className="text-danger">&#42; </span> indicates required</p>
           </form>
+
+          <p>
+            Please allow 24-48 hours for for a response to any inquires made.
+          </p>
         </div>
       </Layout>
     </div>

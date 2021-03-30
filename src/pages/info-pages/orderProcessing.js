@@ -37,7 +37,7 @@ const orderProcessing = ({ data }) => {
             possible.
           </p>
         </div>
-        <div>
+        {/* <div>
           <h2 className="text-light"> Check out some of our best sellers!</h2>
           {data.allMarkdownRemark.edges.map(({ node }) => {
             const image = getImage(node.frontmatter.image);
@@ -62,7 +62,7 @@ const orderProcessing = ({ data }) => {
                       <CardSubtitle>
                         {node.frontmatter.description}
                       </CardSubtitle>
-                      {/* <CardSubtitle>{node.excerpt}</CardSubtitle> */}
+                      <CardSubtitle>{node.excerpt}</CardSubtitle>
                       <CardSubtitle className="float-left mt-5">
                         Price: ${node.frontmatter.price}
                       </CardSubtitle>
@@ -77,7 +77,7 @@ const orderProcessing = ({ data }) => {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </Layout>
     </div>
   );

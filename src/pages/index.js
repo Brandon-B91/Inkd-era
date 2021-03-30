@@ -4,11 +4,13 @@ import { graphql, Link } from "gatsby";
 import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
 import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 import ImgSlide from "../components/Slider";
+import SEO from "../components/seo"
 import "../styles/main.scss";
 
 const IndexPage = ({ data }) => {
   return (
     <Layout>
+    <SEO title="Inkd Era" description="tattoo clothing and apparel"></SEO>
       <div className="img-slide">
         <ImgSlide></ImgSlide>
       </div>

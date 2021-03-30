@@ -21,6 +21,26 @@ const Footer = (node) => {
         </li>
         <li>
           <a
+            href="https://twitter.com/inkd_era"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="twitter"
+          >
+            <i className="fab fa-twitter fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://facebook.com/inkd_era"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="facebook"
+          >
+            <i className="fab fa-facebook-f fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a
             href="mailto:customerservice@inkdera.com"
             target="_blank"
             rel="noopener noreferrer"
