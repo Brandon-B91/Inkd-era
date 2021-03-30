@@ -23,7 +23,7 @@ const ProductPage = ({ data }) => {
   const src = getSrc(post.frontmatter.image)
   return (
     <Layout>
-      <SEO title={post.title} description={post.excerpt}></SEO>
+      <SEO title={post.title} description={post.description}></SEO>
       <div className="full-page">
         <Row>
           <Col md="8 mt-4">
