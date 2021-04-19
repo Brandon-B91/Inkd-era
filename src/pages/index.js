@@ -4,13 +4,13 @@ import { graphql, Link } from "gatsby";
 import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
 import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 import ImgSlide from "../components/Slider";
-import SEO from "../components/seo"
+import SEO from "../components/seo";
 import "../styles/main.scss";
 
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-    <SEO title="Inkd Era" description="tattoo clothing and apparel"></SEO>
+      <SEO title="Inkd Era" description="tattoo clothing and apparel"></SEO>
       <div className="img-slide">
         <ImgSlide></ImgSlide>
       </div>
@@ -22,9 +22,7 @@ const IndexPage = ({ data }) => {
           return (
             <div className="d-inline-flex">
               <div className="flex-row">
-                <Card className="m-2 index-card"
-                key={node.id}
-                >
+                <Card className="m-2 index-card" key={node.id}>
                   <Link to={node.fields.slug}>
                     <GatsbyImage
                       className="card-img-top"
@@ -55,17 +53,17 @@ const IndexPage = ({ data }) => {
             </div>
           );
         })}
-          <Link to="/Contest">
-            <StaticImage
-              style={{width: '100%'}}
-              className="mt-4"
-              src="../images/contest.png"
-              alt="image on present with contest written on it."
-              placeholder="blurred"
-              layout="constrained"
-              height={350}
-            />
-          </Link>
+        <Link to="/Contest">
+          <StaticImage
+            style={{ width: "100%" }}
+            className="mt-4"
+            src="../images/contest.png"
+            alt="image on present with contest written on it."
+            placeholder="blurred"
+            layout="constrained"
+            height={350}
+          />
+        </Link>
       </div>
     </Layout>
   );

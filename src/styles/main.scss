@@ -94,7 +94,7 @@ h1 {
    
   .card {
     border: none;
-    background: black;
+    background: #000;
     color: #fafafa;
     min-height: 486px; 
 
@@ -148,6 +148,17 @@ h1 {
     width: 80%;
     margin: 0 auto;
   }
+
+  .product-card-side {
+    margin: 0 auto;
+    width: 90%;
+    min-height: 50px;
+  }
+  .product-card-side li {
+    text-align: left;
+  }
+
+
 
   .ul-order {
     list-style-type: disc;

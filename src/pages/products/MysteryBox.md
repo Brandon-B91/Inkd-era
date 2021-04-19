@@ -2,15 +2,20 @@
 title: "Mystery Box"
 date: 2025-3-05 08:46:00
 image: '../../images/Mystery Box.png'
-description: "Whats in the box? check it out! There is always a chance for ane exclusive item."
+description: "Whats in the box? check it out! There is always a chance for one exclusive item."
 price: 50
+customField:
+    name: Let us know the size you prefer!
+    values: "Small|Medium|Large|X-Large"
+    gender: Let us know your fit preference.
+    list: "Male|Female"
 tag: "MYSTERY"
 ---
 
-Whats in the box?  
+### Whats in the box?  
 
-- 2 shirts of random design, just tell us your size and shirt preference either male or female.
-- random assortmnet of stickers. (may include car stickers.)
-- chance to win exclusive items that are not available in shop (beanies, hat, lanyard, custom stickers.)
-- Shirt or tank with design not released in the store yet.
+1. Two shirts of random design, just tell us your size and shirt preference either male or female.
+2. Random assortmnet of stickers. (may include car stickers.)
+3. Chance to win exclusive items that are not available in shop (beanies, hat, lanyard, custom stickers.)
+4.  Shirt or tank with design not released in the store yet.
 

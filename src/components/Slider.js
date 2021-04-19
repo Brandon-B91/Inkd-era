@@ -6,11 +6,11 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const settings = {
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 2500,
   arrows: false,
   dots: false,
   infinite: true,
-  speed: 900,
+  speed: 800,
   slidesToShow: 1,
   slidesToScroll: 1,
 };
@@ -20,36 +20,39 @@ const ImgSlide = () => {
     <div>
       <Slider {...settings}>
         <div>
-          <StaticImage 
-          className="mask"
-          src="../images/grp1.jpg"
-          alt="icon"
-          placeholder="blurred"
-          layout="constrained"
-          width={1600}
-          height={600}
+          <StaticImage
+            className="mask"
+            src="../images/grp1.jpg"
+            alt="icon"
+            placeholder="blurred"
+            layout="constrained"
+            objectFit="contain"
+            width={1600}
+            height={700}
           />
         </div>
         <div>
-        <StaticImage 
-          className="mask"
-          src="../images/grp2.jpg"
-          alt="icon"
-          placeholder="blurred"
-          layout="constrained"
-          width={1600}
-          height={600}
-        />
+          <StaticImage
+            className="mask"
+            src="../images/grp2.jpg"
+            alt="icon"
+            placeholder="blurred"
+            layout="constrained"
+            objectFit="contain"
+            width={1600}
+            height={700}
+          />
         </div>
         <div>
-        <StaticImage 
-          src="../images/grp3.jpg"
-          alt="icon"
-          placeholder="blurred"
-          layout="constrained"
-          width={1600}
-          height={600}
-        />
+          <StaticImage
+            src="../images/grp3.jpg"
+            alt="icon"
+            placeholder="blurred"
+            layout="constrained"
+            objectFit="contain"
+            width={1600}
+            height={700}
+          />
         </div>
       </Slider>
     </div>
@@ -57,4 +60,3 @@ const ImgSlide = () => {
 };
 
 export default ImgSlide;
-

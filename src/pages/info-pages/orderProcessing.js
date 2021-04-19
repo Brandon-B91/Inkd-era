@@ -1,10 +1,7 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import { graphql, Link } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 
-const orderProcessing = ({ data }) => {
+const orderProcessing = () => {
   return (
     <div>
       <Layout>
@@ -37,87 +34,9 @@ const orderProcessing = ({ data }) => {
             possible.
           </p>
         </div>
-        {/* <div>
-          <h2 className="text-light"> Check out some of our best sellers!</h2>
-          {data.allMarkdownRemark.edges.map(({ node }) => {
-            const image = getImage(node.frontmatter.image);
-            return (
-              <div className="d-inline-flex">
-                <div className="flex-row">
-                  <Card className="m-2 index-card">
-                    <Link to={node.fields.slug}>
-                      <GatsbyImage
-                        className="card-img-top"
-                        image={image}
-                        alt={node.frontmatter.description}
-                      />
-                    </Link>
-                    <hr />
-                    <CardBody>
-                      <Link to={node.fields.slug}>
-                        <CardTitle className="h4 text-light text-wrap">
-                          {node.frontmatter.title}
-                        </CardTitle>
-                      </Link>
-                      <CardSubtitle>
-                        {node.frontmatter.description}
-                      </CardSubtitle>
-                      <CardSubtitle>{node.excerpt}</CardSubtitle>
-                      <CardSubtitle className="float-left mt-5">
-                        Price: ${node.frontmatter.price}
-                      </CardSubtitle>
-                      <CardSubtitle>
-                        <Badge color="danger float-right mt-5">
-                          {node.frontmatter.tag}
-                        </Badge>
-                      </CardSubtitle>
-                    </CardBody>
-                  </Card>
-                </div>
-              </div>
-            );
-          })}
-        </div> */}
       </Layout>
     </div>
   );
 };
-
-export const query = graphql`
-  query {
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tag: { eq: "POPULAR" }}}
-    ) {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            description
-            price
-            tag
-            image {
-              childImageSharp {
-                gatsbyImageData(
-                  layout: CONSTRAINED
-                  placeholder: BLURRED
-                  formats: [AUTO, JPG]
-                  width: 300
-                  height: 200
-                )
-              }
-            }
-          }
-          fields {
-            slug
-          }
-          excerpt
-        }
-      }
-    }
-  }
-`;
 
 export default orderProcessing;

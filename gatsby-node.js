@@ -26,6 +26,12 @@ exports.createPages = async ({ graphql, actions }) => {
               price
               tag
               gender
+              customField {
+                name
+                values
+                gender
+                list
+              }
             }
             fields {
               slug

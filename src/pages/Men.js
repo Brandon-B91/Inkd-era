@@ -8,7 +8,6 @@ import "../styles/main.scss";
 const MensStyles = ({ data }) => {
   return (
     <Layout>
-
       {/* <h1>{data.site.siteMetadata.title}</h1> */}
       <h2 className="text-light mt-5 mb-4">Mens Styles </h2>
       <div>
@@ -71,7 +70,8 @@ export const query = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC } filter: { frontmatter: { gender: { eq: "male" }}}) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC } 
+      filter: { frontmatter: { gender: { eq: "male" }}}) {
       totalCount
       edges {
         node {

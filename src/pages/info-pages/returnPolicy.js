@@ -12,8 +12,8 @@ const orderProcessing = (props) => {
         </p>
         <h3 className="mt-5">How to manange returns</h3>
         <ul className="ul-order mt-3">
-            <li className="mt-2">Contact us thru social media or email to get started.</li>
-            <li className="mt-2">For returns you will be subject to paying rewturn shipping.</li>
+            <li className="mt-2">Contact us through social media or email to get started.</li>
+            <li className="mt-2">For returns you will be subject to paying return shipping.</li>
             <li className="mt-2">refund will be processed once the item is received.</li>
         </ul>
 

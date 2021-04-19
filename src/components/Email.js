@@ -21,12 +21,12 @@ function Email() {
 
   return (
     <Form>
-      <p>
+      <p className="m-3">
         Sign Up for our newsletter and get notified when we drop new merch or contests!
       </p>
       <div>
         <Input
-        style={{width: "70%", margin: "0 auto", maxWidth: "500px"}}
+        style={{width: "90%", margin: "0 auto", maxWidth: "500px"}}
           className="email-form"
           type="email"
           onChange={handleChange}
@@ -36,19 +36,20 @@ function Email() {
         />
         <span
           status={status}
-          className={
-            status === "success"
-              ? console.log("success")
-              : console.log("failure")
-          }
+          // className={
+          //   status === "success"
+          //     ? console.log("success")
+          //     : console.log("failure")
+          // }
         >
           {message}
         </span>
       </div>
       <button
+      style={{width: "50%", maxWidth: "345px"}}
         type="submit"
         onClick={handleSubmit}
-        className="btn btn-danger text-uppercase mt-4"
+        className="btn btn-danger text-uppercase mt-4 mb-4"
       >
         Subscribe
       </button>

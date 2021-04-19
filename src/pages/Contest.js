@@ -44,7 +44,7 @@ const Contest = () => {
               <li>Then the 4 winners from each month (one weekly) will be voted for by our community to win one free article of clothing their choice of design!</li>
               <li>We will also run an exclusive contest once every three months. You will have the chance to win an item that is either no longer avilable in the shop or Maybe even a design we have not released yet!</li>
             </ul>
-            <h5> Keep us with us as we are always looking for new winners and for new contests!</h5>
+            <h5> Keep up with us as we are always looking for new winners and running new contests!</h5>
           </div>
         </div>
       </Layout>

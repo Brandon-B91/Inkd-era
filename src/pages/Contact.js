@@ -1,9 +1,8 @@
 import React from "react";
 import Layout from "../components/layout";
 import ImgSlide from "../components/Slider";
-import PropTypes from "prop-types";
 
-const Contact = (props) => {
+const Contact = () => {
   return (
     <div>
       <Layout>
@@ -83,7 +82,7 @@ const Contact = (props) => {
           </form>
 
           <p>
-            Please allow 24-48 hours for for a response to any inquires made.
+            Please allow 24-48 hours for a response to any inquires made.
           </p>
         </div>
       </Layout>

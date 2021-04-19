@@ -12,7 +12,7 @@ const shippingPolicy = (props) => {
         </p>
         <h3 className="mt-5">Due to this a few things to keep in mind.</h3>
         <ul className="ul-order mt-3">
-            <li className="mt-2">Wes trive to get you your items as soon as possible.</li>
+            <li className="mt-2">We strive to get you your items as soon as possible.</li>
             <li className="mt-2">Due to the current situation of things shipping times may vary.</li>
             <li className="mt-2">Any expected delays of order will be communicated via email provided.</li>
         </ul>

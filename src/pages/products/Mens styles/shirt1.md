@@ -4,6 +4,9 @@ date: 2021-3-05 08:46:00
 image: '../../../images/shirt.jpg'
 description: "Are you ready to stand out? Well then you need to rock this and show the world how you really feel"
 price: 20
+customField:
+    name: Size
+    values: "Small|Medium|Large|X-Large"
 tag: "POPULAR"
 gender: "male"
 ---
