@@ -32,6 +32,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 gender
                 list
               }
+              line
             }
             fields {
               slug

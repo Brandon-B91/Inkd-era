@@ -28,7 +28,7 @@ const ImgSlide = () => {
             layout="constrained"
             objectFit="contain"
             width={1600}
-            height={700}
+            height={500}
           />
         </div>
         <div>
@@ -40,7 +40,7 @@ const ImgSlide = () => {
             layout="constrained"
             objectFit="contain"
             width={1600}
-            height={700}
+            height={500}
           />
         </div>
         <div>
@@ -51,7 +51,7 @@ const ImgSlide = () => {
             layout="constrained"
             objectFit="contain"
             width={1600}
-            height={700}
+            height={500}
           />
         </div>
       </Slider>

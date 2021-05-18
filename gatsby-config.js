@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Inkd Era`,
     titleTemplate: `%s - Inkd era clothing`,
-    description: `Clothing and brand built for tattoo and tattoed culture`,
+    description: `Clothing and brand built for tattoos and tattoed culture`,
     url: "https://inkdera.com",
     siteUrl: "https://inkdera.com",
     image: "",

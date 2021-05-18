@@ -1,37 +1,23 @@
 import React from "react";
-import Layout from "../components/Layout";
-import { graphql, Link } from "gatsby";
+import { graphql, StaticQuery, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
-import ImgSlide from "../components/Slider";
-import SEO from "../components/seo";
-import SpringSummerLine from "../components/SpringSummerLine";
-import "../styles/main.scss"; 
 
-const IndexPage = ({ data }) => {
-  return (
-    <Layout>
-      <SEO
-        title={data.site.siteMetadata.title}
-        description={data.site.siteMetadata.description}
-      ></SEO>
-      <div className="img-slide">
-        <ImgSlide></ImgSlide>
-      </div>
-      {/* <SpringSummerLine></SpringSummerLine> */}
-      {/* <h1>{data.site.siteMetadata.title}</h1> */}
-      <h2 className="text-light mt-3 mb-4">Newest Arrivals! </h2>
-      <div>
-        {data.allMarkdownRemark.edges.map(({ node }) => {
-          const image = getImage(node.frontmatter.image);
-          return (
-            <div className="d-inline-flex">
-              <div className="flex-row">
+const SpringSummerLine = () => (
+    <div>
+      {/* <div> */}
+        <h2 className="text-light m-3">Spring / Summer line!</h2>
+        <StaticQuery
+          query={springSummerLine}
+          render={(data) => (
+            <div className="d-inline-flex flex-row">
+              {data.allMarkdownRemark.edges.map(({ node }) => (
+                <div>
                 <Card className="m-2 index-card" key={node.id}>
                   <Link to={node.fields.slug}>
                     <GatsbyImage
                       className="card-img-top"
-                      image={image}
+                      image={getImage(node.frontmatter.image)}
                       alt={node.frontmatter.description}
                     />
                   </Link>
@@ -54,31 +40,26 @@ const IndexPage = ({ data }) => {
                     </CardSubtitle>
                   </CardBody>
                 </Card>
-              </div>
+                </div>
+              ))}
             </div>
-          );
-        })}
-          <Link to="/Contest">
-          <div className="contestLink d-flex flex-column justify-content-center">
-            <h1> Contests</h1>
-            <h3> Do you like free things? Who doesn't!</h3>
-            <h5>Click here to learn more!</h5>
-            </div>
-          </Link>
-      </div>
-    </Layout>
-  );
-};
+          )}
+        />
+      {/* </div> */}
+    </div>
+);
 
-export const query = graphql`
+const springSummerLine = graphql`
   query {
     site {
       siteMetadata {
         title
-        description
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { line: { eq: "summer" } } }
+    ) {
       totalCount
       edges {
         node {
@@ -111,4 +92,4 @@ export const query = graphql`
   }
 `;
 
-export default IndexPage;
+export default SpringSummerLine;

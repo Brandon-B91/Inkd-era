@@ -40,11 +40,28 @@ const Contest = () => {
             <h3>So what contest do we run and how can you participate?</h3>
             <p>Well that is pretty simple let's break it down</p>
             <ul>
-              <li>We will run a weekly contest. The winner will be awarded a free sticker pack! (see our social media accounts for the weekly contest entries.)</li>
-              <li>Then the 4 winners from each month (one weekly) will be voted for by our community to win one free article of clothing their choice of design!</li>
-              <li>We will also run an exclusive contest once every three months. You will have the chance to win an item that is either no longer avilable in the shop or Maybe even a design we have not released yet!</li>
+              <li>
+                We will run a weekly contest. The winner will be awarded a free
+                sticker pack! (see our social media accounts for the weekly
+                contest entries.)
+              </li>
+              <li>
+                Then the 4 winners from each month (one weekly) will be voted
+                for by our community to win one free article of clothing their
+                choice of design!
+              </li>
+              <li>
+                We will also run an exclusive contest once every three months.
+                You will have the chance to win an item that is either no longer
+                avilable in the shop or Maybe even a design we have not released
+                yet!
+              </li>
             </ul>
-            <h5> Keep up with us as we are always looking for new winners and running new contests!</h5>
+            <h5>
+              {" "}
+              Keep up with us as we are always looking for new winners and
+              running new contests!
+            </h5>
           </div>
         </div>
       </Layout>

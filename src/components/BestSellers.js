@@ -1,22 +1,16 @@
 import React from "react";
 import { graphql, StaticQuery, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import {
-  Badge,
-  Card,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-} from "reactstrap";
+import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 
 const BestSellers = () => (
   <div>
     <h3>Check out our best sellers!</h3>
     <StaticQuery
       query={bestSellerQuery}
-      render={data => (
+      render={(data) => (
         <div>
-          {data.allMarkdownRemark.edges.map(({ node }) => (  
+          {data.allMarkdownRemark.edges.map(({ node }) => (
             <Card className="m-4 index-card" key={node.id}>
               <Link to={node.fields.slug}>
                 <GatsbyImage
@@ -52,44 +46,45 @@ const BestSellers = () => (
 );
 
 const bestSellerQuery = graphql`
-query {
-  site {
-    siteMetadata {
-      title
+  query {
+    site {
+      siteMetadata {
+        title
+      }
     }
-  }
-  allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC } 
-    filter: { frontmatter: { tag: { eq: "POPULAR" }}}
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { tag: { eq: "POPULAR" } } }
     ) {
-    totalCount
-    edges {
-      node {
-        id
-        frontmatter {
-          title
-          description
-          price
-          tag
-          image {
-            childImageSharp {
-              gatsbyImageData(
-                layout: CONSTRAINED
-                placeholder: BLURRED
-                formats: [AUTO, JPG]
-                width: 300
-                height: 200
-              )
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            description
+            price
+            tag
+            image {
+              childImageSharp {
+                gatsbyImageData(
+                  layout: CONSTRAINED
+                  placeholder: BLURRED
+                  formats: [AUTO, JPG]
+                  width: 300
+                  height: 200
+                )
+              }
             }
           }
+          fields {
+            slug
+          }
+          excerpt
         }
-        fields {
-          slug
-        }
-        excerpt
       }
     }
   }
-}
 `;
 
 export default BestSellers;
