@@ -10,4 +10,4 @@ customField:
 tag: "STICKERS"
 ---
 
-Ready to sticker bomb something? Why not! Show off your ink and be proud, get your sticker pack now and get started bombing!
+Ready to sticker bomb something? Why not! Show off your ink and be proud, get your sticker pack now and start bombing!

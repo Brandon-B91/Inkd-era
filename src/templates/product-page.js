@@ -16,7 +16,7 @@ import {
 import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
 import "../styles/main.scss";
 
-const ProductPage = ({ data, pageContext }) => {
+const ProductPage = ({ data, pageContext, node }) => {
   const baseUrl = "https://inkdera.com";
   const post = data.markdownRemark;
   const image = getImage(post.frontmatter.image);
@@ -55,7 +55,7 @@ const ProductPage = ({ data, pageContext }) => {
               <button
                 style={{ width: "80%", margin: "0 auto" }}
                 className="btn btn-danger snipcart-add-item mb-3"
-                id={Node.id}
+                // id={data.node.id}
                 data-item-id={post.frontmatter.title}
                 data-item-price={post.frontmatter.price}
                 data-item-url={"https://inkdera.com/" + post.fields.slug}
