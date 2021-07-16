@@ -8,7 +8,7 @@ const orderProcessing = (props) => {
         <div className="mt-5 full-page text-light">
           <h1 className="mt-3">Return Policy</h1>
           <p style={{width: "60%", margin: "20px auto"}}>
-              All returns must be requested within 30 days of receiving item.
+              All returns must be requested within 30 days of receiving the item.
         </p>
         <h3 className="mt-5">How to manange returns</h3>
         <ul className="ul-order mt-3">
@@ -27,8 +27,8 @@ const orderProcessing = (props) => {
             that is damaged.
         </p>
         <p>
-            Please allow standard processing times for all items. Once we have been contatcted for a return or damaged item.
-            We will work imemdiately on getting a new one out as soon as possible.
+            Please allow standard processing times for all items. Once we have been contacted for a return or damaged item.
+            We will work immediately on getting a new one out as soon as possible.
         </p>
         </div>
       </Layout>

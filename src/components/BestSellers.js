@@ -11,7 +11,8 @@ const BestSellers = () => (
       render={(data) => (
         <div>
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Card className="m-4 index-card" key={node.id}>
+            <Card className="m-4 index-card" 
+            key={node.id}>
               <Link to={node.fields.slug}>
                 <GatsbyImage
                   className="card-img-top"

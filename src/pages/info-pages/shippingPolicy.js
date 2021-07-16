@@ -10,6 +10,9 @@ const shippingPolicy = (props) => {
           <p style={{width: "60%", margin: "20px auto"}}>
               All items are shipped via USPS first class mail.
         </p>
+        <p>
+        (other shippings options are being explored and more will be available on that at a later date.)
+        </p>
         <h3 className="mt-5">Due to this a few things to keep in mind.</h3>
         <ul className="ul-order mt-3">
             <li className="mt-2">We strive to get you your items as soon as possible.</li>
