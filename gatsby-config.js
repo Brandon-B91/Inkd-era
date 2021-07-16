@@ -5,7 +5,7 @@ module.exports = {
     description: `Clothing and brand built for tattoos and tattoed culture`,
     url: "https://inkdera.com",
     siteUrl: "https://inkdera.com",
-    image: "src/images/inkbottle.png",
+    image: "src/images/inkbottle.svg",
     twitterUsername: "",
   },
   plugins: [
@@ -17,7 +17,13 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        name: `Inkd era`,
+        short_name: `Inkd era`,
+        start_url: `/`,
+        background_color: `#000000`,
+        theme_color: `#000000`,
+        display: `standalone`,
+        icon: "src/images/inkbottle.svg",
       },
     },
     "gatsby-transformer-remark",
