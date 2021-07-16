@@ -17,5 +17,5 @@ tag: "MYSTERY"
 1. Two shirts of random design, just tell us your size and shirt preference either male or female.
 2. Random assortmnet of stickers. (may include car stickers.)
 3. Chance to win exclusive items that are not available in shop (beanies, hat, lanyard, custom stickers.)
-4.  Shirt or tank with design not released in the store yet.
+4.  possibility of receiving a shirt or tank with design not released in the store yet (or may not ever be available for purchase).
 
