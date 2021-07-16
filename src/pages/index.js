@@ -59,10 +59,10 @@ const IndexPage = ({ data }) => {
           );
         })}
           <Link to="/Contest">
-          <div className="contestLink d-flex flex-column justify-content-center">
-            <h1> Contests</h1>
-            <h3> Do you like free things? Who doesn't!</h3>
-            <h5>Click here to learn more!</h5>
+            <div className="contestLink d-flex flex-column justify-content-center">
+              <h1> Contests</h1>
+              <h3> Do you like free things? Who doesn't!</h3>
+              <h5>Click here to learn more!</h5>
             </div>
           </Link>
       </div>

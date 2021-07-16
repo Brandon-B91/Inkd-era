@@ -49,15 +49,11 @@ const WomensStyles = ({ data }) => {
           );
         })}
           <Link to="/Contest">
-            <StaticImage
-              style={{width: '100%'}}
-              className="mt-4"
-              src="../images/contest.png"
-              alt="image on present with contest written on it."
-              placeholder="blurred"
-              layout="constrained"
-              height={350}
-            />
+            <div className="contestLink d-flex flex-column justify-content-center">
+              <h1> Contests</h1>
+              <h3> Do you like free things? Who doesn't!</h3>
+              <h5>Click here to learn more!</h5>
+            </div>
           </Link>
       </div>
     </Layout>
