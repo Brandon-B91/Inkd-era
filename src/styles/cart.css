@@ -1,172 +1,120 @@
-.snipcart-input {
-  background: gray;
-}
 
 a * {
-  color: #fafafa !important;
+  color: #000 !important;
+}
+
+svg {
+  stroke: red !important;
+  /* fill: red !important; */
+}
+
+.snipcart__box--badge-highlight {
+  background: linear-gradient(90deg, firebrick, red) !important;
 }
 
 div.snipcart {
-  background: #333 !important;
+  background: #f4f4f4 !important;
+}
+
+.snipcart-layout__cols {
+  background: #000 !important;
 }
 
 .snipcart-cart-header {
-  background: #333 !important;
+  background: #000 !important;
+}
+
+.snipcart-checkout {
+  background: #000 !important;
+}
+
+.snipcart-modal__close-title, 
+.snipcart-modal__close {
+  color: #000 !important;
 }
 
 .snipcart-cart__secondary-header {
-  background: #333 !important;
-  color: #fafafa !important;
+  background: #000 !important;
+  color: #0a0a0a !important;
 }
 
 .snipcart-cart-header__title {
-  color: #fafafa !important;
+  color: #0a0a0a !important;
 }
 
 .snipcart-item-line__image {
   width: 50px !important;
-  /* height: 300px !important; */
 }
 
 .snipcart__button--icon {
-  border: #333 !important;
+  border: #f4f4f4 !important;
 }
 
 .snipcart-layout {
-  background: #333 !important;
+  background: #f4f4f4 !important;
   height: 10% !important;
 }
 
 .snipcart-layout__content {
-  background: #333 !important;
+  background: #000 !important;
+}
+
+#card-number {
+  color: #0a0a0a !important;
 }
 
 .snipcart-modal {
   margin: 50px auto !important;
+  background: #000 !important;
 }
 
 .snipcart-modal__container {
-  background: #333 !important;
+  background: #000 !important;
 }
 
 .snipcart-form__label {
-  color: #fafafa !important;
+  color: #000 !important;
 }
 
 .snipcart-item-quantity__label {
-  color: #fafafa !important;
+  color: #0a0a0a !important;
 }
 
 .snipcart-item-quantity__total-price {
-  color: #fafafa !important;
+  color: #0a0a0a !important;
 }
 
 .snipcart-cart__content {
-  background: #333 !important;
-  color: #fafafa !important;
+  background: #000 !important;
 }
 
-.snipcart-cart-summary-fees {
-  color: #fafafa !important;
-}
-
-.snipcart-item-line__container {
-  background: #333 !important;
-  color: #fafafa !important;
-}
-
-.snipcart-item-line {
-  background: #333 !important;
+.snipcart-cart-summary-fees__item {
+  color: #000 !important;
 }
 
 .snipcart-cart-button {
   background-image: linear-gradient(90deg, firebrick, red) !important;
+  color: #0a0a0a !important;
+}
+.snipcart-cart-summary__content span {
   color: #000 !important;
-}
-
-.snipcart-featured-payment-methods__title {
-  color: #000 !important;
-}
-
-.snipcart-featured-payment-methods__link {
-  color: #000 !important;
-}
-
-/* billing */
-
-.snipcart__box {
-  background: #000 !important;
-}
-
-.snipcart-cart-header * {
-  color: #fafafa !important;
-}
-
-.snipcart-checkout__content {
-  background: #333 !important;
-}
-
-.snipcart-billing-completed {
-  background: #000 !important;
-  color: #fafafa !important;
-}
-
-.snipcart-shipping-completed {
-  background: #000 !important;
-  color: #fafafa !important;
-}
-
-.snipcart__font--subtitle {
-  color: #fafafa !important;
-}
-
-.snipcart-shipping-address__subtitle {
-  color: #fafafa !important;
-}
-
-.snipcart__notice--with-icon {
-  color: #fafafa !important;
-}
-
-.snipcart-shipping-rates-list * {
-  color: #000 !important;
-}
-
-.snipcart-payment {
-  background: #000 !important;
-  color: #fafafa !important;
-}
-
-.snipcart-cart-summary {
-  background: #000 !important;
-  color: #fafafa !important;
-}
-
-.snipcart-cart-summary__content {
-  background: #000 !important;
-  color: #fafafa !important;
-}
-
-li.snipcart-cart-summary-item {
-  color: #fafafa !important;
-}
-
-.snipcart-cart-summary-fees {
-  color: #fafafa !important;
-}
-
-.snipcart-layout__col {
-  background: #333 !important;
-}
-
-.snipcart-featured-payment-methods {
-  background: #333 !important;
-}
-
-.snipcart-featured-payment-methods--no-background {
-  background: #000 !important;
 }
 
 .snipcart-cart__footer {
-  background: #333 !important;
+  background: #000 !important;
+  color: #f4f4f4 !important;
+}
+
+.snipcart-featured-payment-methods__title  {
+  color: #f4f4f4 !important;
+  background: #000 !important;
+}
+
+
+header span {
+  color: #fafafa !important;
+}
+
+.snipcart__actions--link {
+  color: red !important;
 }

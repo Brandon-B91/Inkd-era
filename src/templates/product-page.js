@@ -130,7 +130,7 @@ const ProductPage = ({ data, pageContext, node }) => {
               </li>
               <li>
                 <a
-                  href={"sms:?&body=" + baseUrl + pageContext.slug}
+                  href={"sms:?&body=Check it out!" + baseUrl + pageContext.slug}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-light"
