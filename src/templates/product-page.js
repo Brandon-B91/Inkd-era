@@ -29,18 +29,11 @@ const ProductPage = ({ data, pageContext }) => {
         <Row>
           <Col md="8" className="mt-4">
             <Card className="mt-4 product-card">
-              <StickerSlider>
               <GatsbyImage
                 className="card-img-top"
                 image={image}
                 alt={post.description}
               />
-              </StickerSlider>
-              {/* <GatsbyImage
-                className="card-img-top"
-                image={image}
-                alt={post.description}
-              /> */}
               <CardBody>
                 <CardTitle className="h1 text-light text-wrap">
                   {post.frontmatter.title}
@@ -176,7 +169,7 @@ export const query = graphql`
           childImageSharp {
             gatsbyImageData(
               layout: CONSTRAINED
-              height: 600
+              height: 400
               placeholder: BLURRED
               formats: [AUTO, JPG]
               transformOptions: { fit: CONTAIN, cropFocus: CENTER }

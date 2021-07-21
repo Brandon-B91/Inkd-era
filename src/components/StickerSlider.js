@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { StaticImage } from "gatsby-plugin-image";
+import { StaticImage, GatsbyImage, getImage, getSrc} from "gatsby-plugin-image";
 
 const settings = {
   autoplay: false,
@@ -67,7 +67,7 @@ const StickerSlider = () => {
         </div>
         <div>
           <StaticImage
-            src="../images/stickers/inkaddictsticker.jpeg"
+            src="../images/stickers/inkdgirlsdoitbettersticker.jpeg"
             alt="icon"
             placeholder="blurred"
             layout="constrained"
