@@ -97,6 +97,7 @@ export const query = graphql`
                   formats: [AUTO, JPG]
                   width: 300
                   height: 200
+                  transformOptions: { fit: COVER, cropFocus: CENTER }
                 )
               }
             }

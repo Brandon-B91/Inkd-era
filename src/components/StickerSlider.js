@@ -5,10 +5,10 @@ import "slick-carousel/slick/slick-theme.css";
 import { StaticImage } from "gatsby-plugin-image";
 
 const settings = {
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 2500,
-  arrows: false,
-  dots: false,
+  arrows: true,
+  dots: true,
   infinite: true,
   speed: 800,
   slidesToShow: 1,
@@ -22,38 +22,93 @@ const StickerSlider = () => {
         <div>
           <StaticImage
             className="mask"
-            src="../images/grp1.jpg"
+            src="../images/stickers/groupsticker.jpeg"
             alt="icon"
             placeholder="blurred"
             layout="constrained"
             objectFit="contain"
-            width={1600}
-            height={500}
+            width={600}
+            height={600}
           />
         </div>
         <div>
           <StaticImage
             className="mask"
-            src="../images/grp2.jpg"
+            src="../images/stickers/mytattoossticker.jpeg"
             alt="icon"
             placeholder="blurred"
             layout="constrained"
             objectFit="contain"
-            width={1600}
-            height={500}
+            width={600}
+            height={600}
           />
         </div>
         <div>
           <StaticImage
-            src="../images/grp3.jpg"
+            src="../images/stickers/inkaddictsticker.jpeg"
             alt="icon"
             placeholder="blurred"
             layout="constrained"
             objectFit="contain"
-            width={1600}
-            height={500}
+            width={600}
+            height={600}
           />
         </div>
+        <div>
+          <StaticImage
+            src="../images/stickers/expensiveskinsticker.jpeg"
+            alt="icon"
+            placeholder="blurred"
+            layout="constrained"
+            objectFit="contain"
+            width={600}
+            height={600}
+          />
+        </div>
+        <div>
+          <StaticImage
+            src="../images/stickers/inkaddictsticker.jpeg"
+            alt="icon"
+            placeholder="blurred"
+            layout="constrained"
+            objectFit="contain"
+            width={600}
+            height={600}
+          />
+        </div>
+        <div>
+          <StaticImage
+            src="../images/stickers/inkordiesticker.jpeg"
+            alt="icon"
+            placeholder="blurred"
+            layout="constrained"
+            objectFit="contain"
+            width={600}
+            height={600}
+          />
+        </div>
+        <div>
+          <StaticImage
+            src="../images/stickers/letsgetinkdsticker.jpeg"
+            alt="icon"
+            placeholder="blurred"
+            layout="constrained"
+            objectFit="contain"
+            width={600}
+            height={600}
+          />
+        </div>
+        <div>
+          <StaticImage
+            src="../images/stickers/rathergetinkdsticker.jpeg"
+            alt="icon"
+            placeholder="blurred"
+            layout="constrained"
+            objectFit="contain"
+            width={600}
+            height={600}
+          />
+         </div>
       </Slider>
     </div>
   );

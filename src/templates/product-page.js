@@ -15,8 +15,9 @@ import {
 } from "reactstrap";
 import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
 import "../styles/main.scss";
+import StickerSlider from "../components/StickerSlider"
 
-const ProductPage = ({ data, pageContext, node }) => {
+const ProductPage = ({ data, pageContext }) => {
   const baseUrl = "https://inkdera.com";
   const post = data.markdownRemark;
   const image = getImage(post.frontmatter.image);
@@ -28,11 +29,18 @@ const ProductPage = ({ data, pageContext, node }) => {
         <Row>
           <Col md="8" className="mt-4">
             <Card className="mt-4 product-card">
+              <StickerSlider>
               <GatsbyImage
                 className="card-img-top"
                 image={image}
                 alt={post.description}
               />
+              </StickerSlider>
+              {/* <GatsbyImage
+                className="card-img-top"
+                image={image}
+                alt={post.description}
+              /> */}
               <CardBody>
                 <CardTitle className="h1 text-light text-wrap">
                   {post.frontmatter.title}
@@ -93,7 +101,7 @@ const ProductPage = ({ data, pageContext, node }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fab fa-facebook-f fa-2x"></i>
+                  <i className="fab fa-facebook-f fa-2x text-light"></i>
                 </a>
               </li>
               <li className="mr-4">
@@ -111,13 +119,13 @@ const ProductPage = ({ data, pageContext, node }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fab fa-twitter fa-2x"></i>
+                  <i className="fab fa-twitter fa-2x text-light"></i>
                 </a>
               </li>
               <li className="mr-4">
                 <a
                   href={
-                    "mailto: ?subject=Check it out!&body=Check this out! %0D%0A %0D%0A " +
+                    "mailto: ?subject=Check this out!&body=Check this out! %0D%0A %0D%0A " +
                     baseUrl +
                     pageContext.slug
                   }
@@ -125,17 +133,17 @@ const ProductPage = ({ data, pageContext, node }) => {
                   rel="noopener noreferrer"
                   className="text-light"
                 >
-                  <i className="fas fa-envelope fa-2x"></i>
+                  <i className="fas fa-envelope fa-2x text-light"></i>
                 </a>
               </li>
               <li>
                 <a
-                  href={"sms:?&body=Check it out!" + baseUrl + pageContext.slug}
+                  href={"sms:?&body=Check this out" + baseUrl + pageContext.slug}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-light"
                 >
-                  <i class="fas fa-sms fa-2x"></i>
+                  <i class="fas fa-sms fa-2x text-light"></i>
                 </a>
               </li>
             </ul>
@@ -171,7 +179,7 @@ export const query = graphql`
               height: 600
               placeholder: BLURRED
               formats: [AUTO, JPG]
-              transformOptions: { fit: COVER, cropFocus: ATTENTION }
+              transformOptions: { fit: CONTAIN, cropFocus: CENTER }
             )
           }
         }

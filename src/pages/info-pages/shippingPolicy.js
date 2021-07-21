@@ -3,7 +3,7 @@ import Layout from "../../components/Layout"
 
 const shippingPolicy = (props) => {
     return (
-        <div>
+    <div>
       <Layout>
         <div className="mt-5 full-page text-light">
           <h1 className="mt-3">Shipping Policy</h1>
@@ -31,7 +31,7 @@ const shippingPolicy = (props) => {
         </div>
       </Layout>
     </div>
-    )
+  )
 }
 
 export default shippingPolicy

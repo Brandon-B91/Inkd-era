@@ -1,7 +1,7 @@
 ---
 title: "Car Decal"
 date: 2021-4-02 11:50:00
-image: '../../../images/decal.jpg'
+image: '../../../images/cardecal.jpeg'
 description: "Car decal for window or body application" 
 price: 8
 customField:
