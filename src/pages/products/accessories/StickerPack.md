@@ -4,6 +4,7 @@ date: 2025-3-05 08:46:00
 image: '../../../images//stickers/groupsticker.jpeg'
 description: "5 pack or 10 pack of stickers (Random assortment)"
 price: 5 
+weight: 25
 customField:
     name: Sticker pack!
     values: "5 pack|10 pack[+3.00]" 

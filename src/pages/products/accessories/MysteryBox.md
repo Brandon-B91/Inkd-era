@@ -4,6 +4,7 @@ date: 2025-3-05 08:46:00
 image: '../../../images/Mystery Box.png'
 description: "Whats in the box? check it out! There is always a chance for one exclusive item."
 price: 50
+weight: 450
 customField:
     name: Let us know the size you prefer!
     values: "Small|Medium|Large|X-Large"

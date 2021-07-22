@@ -4,6 +4,7 @@ date: 2021-4-02 11:50:00
 image: '../../../images/cardecal.jpeg'
 description: "Car decal for window or body application" 
 price: 8
+weight: 25
 customField:
     name: Car decal size!
     values: "8 inch| 10 inch[+2.00]| 12 inch[+4.00]"

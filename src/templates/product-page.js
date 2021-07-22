@@ -67,6 +67,7 @@ const ProductPage = ({ data, pageContext }) => {
                 data-item-custom1-options={post.frontmatter.customField.values}
                 data-item-custom2-name={post.frontmatter.customField.gender}
                 data-item-custom2-options={post.frontmatter.customField.list}
+                data-item-weight={post.frontmatter.weight}
               >
                 Add to cart!
               </button>
@@ -131,7 +132,7 @@ const ProductPage = ({ data, pageContext }) => {
               </li>
               <li>
                 <a
-                  href={"sms:?&body=Check this out" + baseUrl + pageContext.slug}
+                  href={"sms:?&body=Check this out " + baseUrl + pageContext.slug}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-light"

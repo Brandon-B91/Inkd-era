@@ -118,3 +118,18 @@ header span {
 .snipcart__actions--link {
   color: red !important;
 }
+
+.snipcart-form-radio__label:before {
+  color: white !important;
+  background: white !important;
+}
+
+.snipcart-form-radio__label::after {
+  color: red !important;
+  background: red !important;
+  border-radius: 50% !important;
+}
+
+.snipcart-shipping-rates-list-item--highlight {
+  border: 1px solid #333 !important;
+}
