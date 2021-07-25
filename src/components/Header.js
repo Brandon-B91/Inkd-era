@@ -46,6 +46,13 @@ const Header = (props) => {
                       </NavLink>
                     </NavItem>
                   </DropdownItem>
+                  <DropdownItem className="bg-dark">
+                    <NavItem>
+                      <NavLink href="/Accessories">
+                        Accessories
+                      </NavLink>
+                    </NavItem>
+                  </DropdownItem>
                   {/* <DropdownItem className="bg-dark">
                     <NavItem>
                       <NavLink href="/Men">

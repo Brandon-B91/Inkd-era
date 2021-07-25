@@ -74,7 +74,8 @@ module.exports = {
       resolve: `gatsby-plugin-snipcart-advanced`,
       options: {
         version: "3.0.29",
-        publicApiKey: "NzM0Y2QxZDAtOTliNS00NTU4LTliZGYtMjUyNTZjMjc4MDRiNjM3NDY0MDk2MTY2MzA1MTMz", // use public api key here or in environment variable
+        publicApiKey:
+          "YmNjNDg4MjAtYjI0NS00ZTBjLTkxOTEtNjBhN2NmNzNmMDNlNjM3NDY0MDk2MTY2MzA1MTMz", // use public api key here or in environment variable
         defaultLang: "en",
         currency: "usd",
         openCartOnAdd: true,
@@ -88,8 +89,7 @@ module.exports = {
             },
           },
         },
-        templatesUrl:
-          "/snipcart-templates.html",
+        templatesUrl: "/snipcart-templates.html",
         // not work on dev. Gatsby not serve html file in dev https://github.com/gatsbyjs/gatsby/issues/13072
         innerHTML: `
         <billing section="bottom">
@@ -101,7 +101,14 @@ module.exports = {
       resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
-        head: true
+        head: true,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint: "https://inkdera.us6.list-manage.com/subscribe/post?u=3637eeb82811147446f9ee9e0&amp;id=3194e8106d", // string; add your MC list endpoint here; see instructions below
+        timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
       },
     },
   ],

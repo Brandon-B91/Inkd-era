@@ -43,75 +43,10 @@ const StickerSlider = () => {
             height={600}
           />
         </div>
-        <div>
-          <StaticImage
-            src="../images/stickers/inkaddictsticker.jpeg"
-            alt="icon"
-            placeholder="blurred"
-            layout="constrained"
-            objectFit="contain"
-            width={600}
-            height={600}
-          />
-        </div>
-        <div>
-          <StaticImage
-            src="../images/stickers/expensiveskinsticker.jpeg"
-            alt="icon"
-            placeholder="blurred"
-            layout="constrained"
-            objectFit="contain"
-            width={600}
-            height={600}
-          />
-        </div>
-        <div>
-          <StaticImage
-            src="../images/stickers/inkdgirlsdoitbettersticker.jpeg"
-            alt="icon"
-            placeholder="blurred"
-            layout="constrained"
-            objectFit="contain"
-            width={600}
-            height={600}
-          />
-        </div>
-        <div>
-          <StaticImage
-            src="../images/stickers/inkordiesticker.jpeg"
-            alt="icon"
-            placeholder="blurred"
-            layout="constrained"
-            objectFit="contain"
-            width={600}
-            height={600}
-          />
-        </div>
-        <div>
-          <StaticImage
-            src="../images/stickers/letsgetinkdsticker.jpeg"
-            alt="icon"
-            placeholder="blurred"
-            layout="constrained"
-            objectFit="contain"
-            width={600}
-            height={600}
-          />
-        </div>
-        <div>
-          <StaticImage
-            src="../images/stickers/rathergetinkdsticker.jpeg"
-            alt="icon"
-            placeholder="blurred"
-            layout="constrained"
-            objectFit="contain"
-            width={600}
-            height={600}
-          />
-         </div>
       </Slider>
     </div>
   );
 };
+
 
 export default StickerSlider;

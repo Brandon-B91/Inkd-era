@@ -55,7 +55,8 @@ const bestSellerQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tag: { eq: "POPULAR" } } }
+      filter: { frontmatter: { tag: { eq: "BEST SELLER" } } }
+      limit: 2
     ) {
       totalCount
       edges {
@@ -73,7 +74,8 @@ const bestSellerQuery = graphql`
                   placeholder: BLURRED
                   formats: [AUTO, JPG]
                   width: 300
-                  height: 200
+                  height: 300
+                  transformOptions: { fit: COVER, cropFocus: CENTER }
                 )
               }
             }

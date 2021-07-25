@@ -36,11 +36,11 @@ function Email() {
         />
         <span
           status={status}
-          // className={
-          //   status === "success"
-          //     ? console.log("success")
-          //     : console.log("failure")
-          // }
+          className={
+            status === "success"
+              ? console.log("success")
+              : console.log("failure")
+          }
         >
           {message}
         </span>

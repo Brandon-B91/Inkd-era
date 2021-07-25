@@ -10,7 +10,7 @@ const settings = {
   arrows: false,
   dots: false,
   infinite: true,
-  speed: 800,
+  speed: 1100,
   slidesToShow: 1,
   slidesToScroll: 1,
 };
@@ -22,36 +22,36 @@ const ImgSlide = () => {
         <div>
           <StaticImage
             className="mask"
-            src="../images/grp1.jpg"
+            src="../images/grp1.jpeg"
             alt="icon"
             placeholder="blurred"
             layout="constrained"
-            objectFit="contain"
             width={1600}
-            height={500}
+            height={600}
+            quality={100}
           />
         </div>
         <div>
           <StaticImage
             className="mask"
-            src="../images/grp2.jpg"
+            src="../images/grp2.jpeg"
             alt="icon"
             placeholder="blurred"
             layout="constrained"
-            objectFit="contain"
             width={1600}
-            height={500}
+            height={600}
+            quality={100}
           />
         </div>
         <div>
           <StaticImage
-            src="../images/grp3.jpg"
+            src="../images/grp3.jpeg"
             alt="icon"
             placeholder="blurred"
             layout="constrained"
-            objectFit="contain"
             width={1600}
-            height={500}
+            height={600}
+            quality={100}
           />
         </div>
       </Slider>

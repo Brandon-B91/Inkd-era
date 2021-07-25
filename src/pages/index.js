@@ -78,7 +78,9 @@ export const query = graphql`
         description
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { display: { eq: "Y" } } }
+      ) {
       totalCount
       edges {
         node {
@@ -96,8 +98,8 @@ export const query = graphql`
                   placeholder: BLURRED
                   formats: [AUTO, JPG]
                   width: 300
-                  height: 200
-                  transformOptions: { fit: COVER, cropFocus: CENTER }
+                  height: 300
+                  transformOptions: { cropFocus: CENTER }
                 )
               }
             }

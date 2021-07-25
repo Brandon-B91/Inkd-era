@@ -1,7 +1,8 @@
 ---
 title: "Mystery Box"
 date: 2025-3-05 08:46:00
-image: '../../../images/Mystery Box.png'
+image: '../../../images/mysterybox.png'
+image2: '../../../images/mysterybox2.png'
 description: "Whats in the box? check it out! There is always a chance for one exclusive item."
 price: 50
 weight: 450
@@ -11,6 +12,8 @@ customField:
     gender: Let us know your fit preference.
     list: "Male|Female"
 tag: "MYSTERY"
+gender: "accessory"
+display: "Y"
 ---
 
 ### Whats in the box?  

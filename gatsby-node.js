@@ -33,6 +33,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 list
               }
               line
+              display
             }
             fields {
               slug

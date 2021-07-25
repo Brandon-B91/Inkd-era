@@ -3,6 +3,9 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import SEO from "../components/seo";
 import BestSellers from "../components/BestSellers";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import {
   Badge,
   Card,
@@ -15,13 +18,25 @@ import {
 } from "reactstrap";
 import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
 import "../styles/main.scss";
-import StickerSlider from "../components/StickerSlider"
 
 const ProductPage = ({ data, pageContext }) => {
   const baseUrl = "https://inkdera.com";
   const post = data.markdownRemark;
   const image = getImage(post.frontmatter.image);
+  const image2 = getImage(post.frontmatter.image2);
   const src = getSrc(post.frontmatter.image);
+
+  const settings = {
+    autoplay: false,
+    autoplaySpeed: 2500,
+    arrows: true,
+    dots: true,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <Layout>
       <SEO title={post.title} description={post.description}></SEO>
@@ -29,11 +44,22 @@ const ProductPage = ({ data, pageContext }) => {
         <Row>
           <Col md="8" className="mt-4">
             <Card className="mt-4 product-card">
-              <GatsbyImage
-                className="card-img-top"
-                image={image}
-                alt={post.description}
-              />
+              <Slider {...settings}>
+                <div style={{ backgroundColor: "white"}}>
+                  <GatsbyImage
+                    className="card-image-top"
+                    image={image}
+                    alt={post.description}
+                  />
+                </div>
+                <div style={{ backgroundColor: "white"}}>
+                  <GatsbyImage
+                    className="card-image-top"
+                    image={image2}
+                    alt={post.description}
+                  />
+                </div>
+              </Slider>
               <CardBody>
                 <CardTitle className="h1 text-light text-wrap">
                   {post.frontmatter.title}
@@ -63,11 +89,11 @@ const ProductPage = ({ data, pageContext }) => {
                 data-item-description={post.frontmatter.description}
                 data-item-image={src}
                 data-item-name={post.frontmatter.title}
+                data-item-weight={post.frontmatter.weight}
                 data-item-custom1-name={post.frontmatter.customField.name}
                 data-item-custom1-options={post.frontmatter.customField.values}
                 data-item-custom2-name={post.frontmatter.customField.gender}
                 data-item-custom2-options={post.frontmatter.customField.list}
-                data-item-weight={post.frontmatter.weight}
               >
                 Add to cart!
               </button>
@@ -132,7 +158,9 @@ const ProductPage = ({ data, pageContext }) => {
               </li>
               <li>
                 <a
-                  href={"sms:?&body=Check this out " + baseUrl + pageContext.slug}
+                  href={
+                    "sms:?&body=Check this out! " + baseUrl + pageContext.slug
+                  }
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-light"
@@ -166,14 +194,26 @@ export const query = graphql`
         description
         price
         tag
+        weight
         image {
           childImageSharp {
             gatsbyImageData(
               layout: CONSTRAINED
-              height: 400
+              width: 800
               placeholder: BLURRED
               formats: [AUTO, JPG]
-              transformOptions: { fit: CONTAIN, cropFocus: CENTER }
+              transformOptions: { fit: COVER, cropFocus: CENTER }
+            )
+          }
+        }
+        image2 {
+          childImageSharp {
+            gatsbyImageData(
+              layout: CONSTRAINED
+              width: 800
+              placeholder: BLURRED
+              formats: [AUTO, JPG]
+              transformOptions: { fit: COVER, cropFocus: CENTER }
             )
           }
         }
