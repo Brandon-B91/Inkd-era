@@ -5,7 +5,7 @@ image: '../../../images/mysterybox.png'
 image2: '../../../images/mysterybox2.png'
 description: "Whats in the box? check it out! There is always a chance for one exclusive item."
 price: 50
-weight: 450
+weight: 300
 customField:
     name: Let us know the size you prefer!
     values: "Small|Medium|Large|X-Large"
