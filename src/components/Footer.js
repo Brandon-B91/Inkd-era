@@ -32,7 +32,7 @@ const Footer = () => {
           </li>
           <li>
             <a
-              href="https://facebook.com/inkd_era"
+              href="https://www.facebook.com/Inkderaofficial"
               target="_blank"
               rel="noopener noreferrer"
               className="facebook"

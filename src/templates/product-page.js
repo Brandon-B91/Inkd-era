@@ -23,7 +23,7 @@ const ProductPage = ({ data, pageContext }) => {
   const baseUrl = "https://inkdera.com";
   const post = data.markdownRemark;
   const image = getImage(post.frontmatter.image);
-  const image2 = getImage(post.frontmatter.image2);
+  const imageback = getImage(post.frontmatter.image2);
   const src = getSrc(post.frontmatter.image);
 
   const settings = {
@@ -55,7 +55,7 @@ const ProductPage = ({ data, pageContext }) => {
                 <div style={{ backgroundColor: "white"}}>
                   <GatsbyImage
                     className="card-image-top"
-                    image={image2}
+                    image={imageback}
                     alt={post.description}
                   />
                 </div>
@@ -115,7 +115,7 @@ const ProductPage = ({ data, pageContext }) => {
                   href={
                     "https://www.facebook.com/sharer.php?u=" +
                     baseUrl +
-                    pageContext.slug
+                    pageContext.slug 
                   }
                   className="facebook text-light"
                   target="_blank"
@@ -127,13 +127,10 @@ const ProductPage = ({ data, pageContext }) => {
               <li className="mr-4">
                 <a
                   href={
-                    "https://www.twitter.com/share?url=" +
+                    "https://www.twitter.com/share?text=Check this out! &url=" +
                     baseUrl +
                     pageContext.slug +
-                    "&text=" +
-                    post.title +
-                    "&via" +
-                    "twitterHandle"
+                    "&hashtags=Inkdera"
                   }
                   className="twitter text-light"
                   target="_blank"
