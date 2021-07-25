@@ -22,7 +22,7 @@ const Footer = () => {
           </li>
           <li>
             <a
-              href="https://twitter.com/inkd_era"
+              href="https://twitter.com/InkdEra"
               target="_blank"
               rel="noopener noreferrer"
               className="twitter"
