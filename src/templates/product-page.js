@@ -130,8 +130,9 @@ const ProductPage = ({ data, pageContext }) => {
                     "https://www.twitter.com/share?text=Check this out! &url=" +
                     baseUrl +
                     pageContext.slug +
-                    "&hashtags=Inkdera"
+                    "&hashtags=Inkdera"                
                   }
+                  img src={image}
                   className="twitter text-light"
                   target="_blank"
                   rel="noopener noreferrer"
