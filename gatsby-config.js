@@ -67,7 +67,7 @@ module.exports = {
         background_color: `#000`,
         theme_color: `#fafafa`,
         display: `standalone`,
-        icon: `src/images/inkbottle.svg`,
+        icon: `src/images/inkdEraLogo.png`,
       },
     },
       "gatsby-plugin-offline",
