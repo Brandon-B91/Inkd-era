@@ -39,9 +39,11 @@ const ProductPage = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <SEO title={post.title} 
-      description={post.description}>
-      image={image}
+      <SEO 
+        title={post.title} 
+        description={post.description}
+        image={src}
+      >
       </SEO>
       <div className="full-page">
         <Row>
