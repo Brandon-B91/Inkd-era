@@ -39,7 +39,10 @@ const ProductPage = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <SEO title={post.title} description={post.description}></SEO>
+      <SEO title={post.title} 
+      description={post.description}>
+      image={image}
+      </SEO>
       <div className="full-page">
         <Row>
           <Col md="8" className="mt-4">
@@ -130,7 +133,7 @@ const ProductPage = ({ data, pageContext }) => {
                     "https://www.twitter.com/share?text=Check this out! &url=" +
                     baseUrl +
                     pageContext.slug +
-                    "&hashtags=Inkdera"                
+                    "&hashtags=Inkdera" 
                   }
                   img src={image}
                   className="twitter text-light"
