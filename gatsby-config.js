@@ -6,7 +6,7 @@ module.exports = {
     url: "https://inkdera.com",
     siteUrl: "https://inkdera.com",
     image: "src/images/inkdEraLogo.png",
-    twitterUsername: "InkdEra",
+    twitterUsername: "@InkdEra",
   },
   plugins: [
     "gatsby-plugin-sass",
