@@ -23,7 +23,7 @@ module.exports = {
         background_color: `#000000`,
         theme_color: `#000000`,
         display: `standalone`,
-        icon: "src/images/inkEraLogo",
+        icon: "src/images/inkdEraLogo.png",
       },
     },
     "gatsby-transformer-remark",
