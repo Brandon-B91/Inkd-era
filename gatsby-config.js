@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Inkd Era`,
     titleTemplate: `%s - Inkd era clothing`,
-    description: `Clothing and brand built for tattoos and tattoed culture`,
+    description: `Clothing and brand built for tattoos and tattoed culture including pierced and alternative styles!`,
     url: "https://inkdera.com",
     siteUrl: "https://inkdera.com",
     image: "src/images/inkdEraLogo.png",
@@ -70,6 +70,7 @@ module.exports = {
         icon: `src/images/inkbottle.svg`,
       },
     },
+      "gatsby-plugin-offline",
     {
       resolve: `gatsby-plugin-snipcart-advanced`,
       options: {

@@ -5,7 +5,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 import ImgSlide from "../components/Slider";
 import SEO from "../components/seo";
-import SpringSummerLine from "../components/SpringSummerLine";
 import "../styles/main.scss"; 
 
 const IndexPage = ({ data }) => {
@@ -58,8 +57,18 @@ const IndexPage = ({ data }) => {
             </div>
           );
         })}
+          <h3 className="text-light text-center mt-3 mb-2"> Want to see our full selection? </h3>
+          <Link to="/Men">
+            <h3 className="btn btn-danger text-light m-1">Mens styles</h3>
+          </Link>
+          <Link to="/Women">
+            <h3 className="btn btn-danger text-light m-1">Womens styles</h3>
+          </Link>
+          <Link to="/Accessories">
+            <h3 className="btn btn-danger text-light m-1">Accessories</h3>
+          </Link>
           <Link to="/Contest">
-            <div className="contestLink d-flex flex-column justify-content-center">
+            <div className="contestLink d-flex flex-column justify-content-center mt-3">
               <h1 className="text-light"> Contests</h1>
               <h3 className="text-light"> Do you like free things? Who doesn't!</h3>
               <h5 className="text-light">Click here to learn more!</h5>
@@ -80,6 +89,7 @@ export const query = graphql`
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { display: { eq: "Y" } } }
+      limit: 16
       ) {
       totalCount
       edges {
