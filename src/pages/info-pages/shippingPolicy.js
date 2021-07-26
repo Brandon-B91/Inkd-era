@@ -8,7 +8,7 @@ const shippingPolicy = (props) => {
         <div className="mt-5 full-page text-light">
           <h1 className="mt-3">Shipping Policy</h1>
           <p style={{width: "60%", margin: "20px auto"}}>
-              All items are shipped via USPS first class mail.
+              All items are shipped via USPS.
         </p>
         <p>
         (other shippings options are being explored and more will be available on that at a later date.)
@@ -26,7 +26,8 @@ const shippingPolicy = (props) => {
         <p>
             Trust us we know how it feels to wait for your items. What we aim to do is make sure 
             every item you receive is of highest quality to meet our standards. You might have to wait 
-            a day or so longer but this ensures that you will receive your items is the best condition possible.
+            a day or so longer to ensure that all items meet or quality and standards. This way your items 
+            are always up to your expectations. 
         </p>
         </div>
       </Layout>

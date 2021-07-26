@@ -5,8 +5,8 @@ module.exports = {
     description: `Clothing and brand built for tattoos and tattoed culture`,
     url: "https://inkdera.com",
     siteUrl: "https://inkdera.com",
-    image: "src/images/inkbottle.svg",
-    twitterUsername: "",
+    image: "src/images/inkdEraLogo.png",
+    twitterUsername: "InkdEra",
   },
   plugins: [
     "gatsby-plugin-sass",
