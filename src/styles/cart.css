@@ -163,3 +163,11 @@ header span {
 .snipcart-cart-summary-fees__amount {
   color: #000000 !important;
 }
+
+.snipcart-form__label--checkbox::before {
+  background: black !important;
+}
+
+
+
+

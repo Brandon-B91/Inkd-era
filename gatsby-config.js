@@ -94,7 +94,7 @@ module.exports = {
         // not work on dev. Gatsby not serve html file in dev https://github.com/gatsbyjs/gatsby/issues/13072
         innerHTML: `
         <billing section="bottom">
-   
+          
         </billing>`,
       },
     },
