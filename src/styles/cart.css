@@ -133,3 +133,33 @@ header span {
 .snipcart-shipping-rates-list-item--highlight {
   border: 1px solid #333 !important;
 }
+
+.snipcart__font--secondary {
+  color: #000000 !important;
+}
+
+/* .snipcart-discount-box__button {
+  color: #000000 !important;
+} */
+
+.snipcart-discount-box__form-container:focus {
+  outline: none !important;
+  border: black 1px solid !important;
+}
+
+.snipcart-cart-summary-fees {
+  background: white !important;
+  color: #000000 !important;
+}
+
+.snipcart-featured-payment-methods__link {
+  color: white !important;
+}
+
+.snipcart-cart-summary-fees__title {
+  color: #000000 !important;
+}
+
+.snipcart-cart-summary-fees__amount {
+  color: #000000 !important;
+}

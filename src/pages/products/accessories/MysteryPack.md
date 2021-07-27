@@ -1,9 +1,9 @@
 ---
-title: "Mystery Box"
+title: "Mystery Pack"
 date: 2025-3-05 08:46:00
-image: '../../../images/mysterybox.png'
+image: '../../../images/mysteryPack.png'
 image2: '../../../images/mysterybox2.png'
-description: "Whats in the box? check it out! There is always a chance for one exclusive item."
+description: "Whats in the pack? check it out! There is always a chance for one exclusive item."
 price: 50
 weight: 300
 customField:
