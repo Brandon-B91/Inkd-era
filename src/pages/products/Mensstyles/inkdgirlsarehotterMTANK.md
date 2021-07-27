@@ -1,5 +1,5 @@
 ---
-title: "Inkd girls are hotter tank top"
+title: "Ink'd Girls Are Hotter Tank Top"
 date: 2021-3-05 08:46:00
 image: '../../../images/mens tanks/inkdgirlsMTANK.png'
 image2: '../../../images/mens tanks/menstankback.png'

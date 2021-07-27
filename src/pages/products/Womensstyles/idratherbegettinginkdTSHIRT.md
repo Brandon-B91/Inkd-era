@@ -1,5 +1,5 @@
 ---
-title: "I'd rather be getting inkd"
+title: "I'd Rather Be Getting Inkd"
 date: 2021-3-06 08:46:00
 image: '../../../images/womens tshirts/idratherbegettinginkdTSHIRT.png'
 image2: '../../../images/womens tshirts/tshirtback.png'

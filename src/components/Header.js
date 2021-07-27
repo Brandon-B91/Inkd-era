@@ -23,7 +23,7 @@ const Header = (props) => {
     <div>
       <Navbar fixed="top" dark expand="xs">
         <div className="container">
-          <NavbarBrand href="/">Inkd Era</NavbarBrand>
+          <NavbarBrand href="/">Ink'd Era</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>

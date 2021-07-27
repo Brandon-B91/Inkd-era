@@ -11,15 +11,15 @@ const Contact = () => {
           <h1>Want to get in touch with us?</h1>
           <h3>Heres how!</h3>
           <p>
-            Of course you can always reach out to us on social or thruough our
-            E-mail address. We would love to hear from you for feedback
-            suggestion concerns or even to comment on something or course for
+            Of course you can always reach out to us on social media or thruough our
+            E-mail address. We would love to hear from you for general feedback,
+            suggestion, concerns or even to comment on something of course for
             order status as well!
           </p>
           <ul className="contact-ul text-center mt-4">
             <li>
               <a
-                href="http://instagram.com/inkd_era"
+                href="http://instagram.com/Inkd_era"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="instagram"
@@ -29,7 +29,7 @@ const Contact = () => {
             </li>
             <li>
               <a
-                href="https://twitter.com/inkd_era"
+                href="https://twitter.com/Inkd_era"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="twitter"
@@ -39,7 +39,7 @@ const Contact = () => {
             </li>
             <li>
               <a
-                href="https://facebook.com/inkd_era"
+                href="https://facebook.com/Inkd_era"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="facebook"
@@ -49,7 +49,7 @@ const Contact = () => {
             </li>
             <li>
               <a
-                href="mailto:customerservice@inkdera.com"
+                href="mailto:customerservice@Inkdera.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="instagram"

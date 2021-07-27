@@ -1,9 +1,9 @@
 ---
-title: "Ink or die womens tank top"
+title: "Ink or Die Womens Tank Top"
 date: 2021-3-05 08:46:00
 image: '../../../images/womens tanks/inkordieWTANK.png'
 image2: '../../../images/womens tanks/womenstankback.png'
-description: "Ink or die? sounds pretty epic right? Yeah we know it does!"
+description: "Ink or die? sounds pretty epic, right? Yeah we know it does!"
 price: 20
 weight: 150
 customField:

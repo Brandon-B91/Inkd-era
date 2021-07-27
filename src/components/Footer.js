@@ -12,7 +12,7 @@ const Footer = () => {
         <ul>
           <li>
             <a
-              href="http://instagram.com/inkd_era"
+              href="http://instagram.com/Inkd_era"
               target="_blank"
               rel="noopener noreferrer"
               className="instagram"
@@ -42,7 +42,7 @@ const Footer = () => {
           </li>
           <li>
             <a
-              href="mailto:customerservice@inkdera.com"
+              href="mailto:customerservice@Inkdera.com"
               target="_blank"
               rel="noopener noreferrer"
               className="instagram"

@@ -20,7 +20,7 @@ import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
 import "../styles/main.scss";
 
 const ProductPage = ({ data, pageContext }) => {
-  const baseUrl = "https://inkdera.com";
+  const baseUrl = "https://Inkdera.com";
   const post = data.markdownRemark;
   const image = getImage(post.frontmatter.image);
   const imageback = getImage(post.frontmatter.image2);
@@ -90,7 +90,7 @@ const ProductPage = ({ data, pageContext }) => {
                 // id={data.node.id}
                 data-item-id={post.frontmatter.title}
                 data-item-price={post.frontmatter.price}
-                data-item-url={"https://inkdera.com/" + post.fields.slug}
+                data-item-url={"https://Inkdera.com/" + post.fields.slug}
                 data-item-description={post.frontmatter.description}
                 data-item-image={src}
                 data-item-name={post.frontmatter.title}

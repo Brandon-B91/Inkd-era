@@ -1,9 +1,9 @@
 ---
-title: "Ink or die"
+title: "Ink or Die"
 date: 2021-3-05 08:46:00
 image: '../../../images/womens tshirts/inkordieTSHIRT.png'
 image2: '../../../images/womens tshirts/tshirtback.png'
-description: "Ink or die? sounds pretty epic right? Yeah we know it does!"
+description: "Ink or die? sounds pretty epic, right? Yeah we know it does!"
 price: 20
 weight: 150
 customField:

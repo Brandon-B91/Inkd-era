@@ -27,7 +27,7 @@ const shippingPolicy = (props) => {
             Trust us we know how it feels to wait for your items. What we aim to do is make sure 
             every item you receive is of highest quality to meet our standards. You might have to wait 
             a day or so longer to ensure that all items meet or quality and standards. This way your items 
-            are always up to your expectations. 
+            are always up to your expectations.
         </p>
         </div>
       </Layout>

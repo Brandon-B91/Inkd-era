@@ -1,9 +1,9 @@
 ---
-title: "Ink addict  womens tank top"
+title: "Ink Addict  Womens Tank Top"
 date: 2021-3-05 08:46:00
 image: '../../../images/womens tanks/inkaddictWTANK.png'
 image2: '../../../images/womens tanks/womenstankback.png'
-description: "Once you start you just can't stop!"
+description: "Once you start, you just can't stop!"
 price: 20
 weight: 150
 customField:

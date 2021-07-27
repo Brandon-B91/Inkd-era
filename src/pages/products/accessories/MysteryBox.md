@@ -16,7 +16,7 @@ gender: "accessory"
 display: "Y"
 ---
 
-### Whats in the box?  
+### What's in the box?  
 
 1. Two shirts of random design, just tell us your size and shirt preference either male or female.
 2. Random assortmnet of stickers. (may include car stickers.)

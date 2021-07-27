@@ -67,7 +67,7 @@ module.exports = {
         background_color: `#000`,
         theme_color: `#fafafa`,
         display: `standalone`,
-        icon: `src/images/inkdEraLogo.png`,
+        icon: `src/images/InkdEraLogo.png`,
       },
     },
       "gatsby-plugin-offline",
@@ -108,7 +108,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-mailchimp",
       options: {
-        endpoint: "https://inkdera.us6.list-manage.com/subscribe/post?u=3637eeb82811147446f9ee9e0&amp;id=3194e8106d", // string; add your MC list endpoint here; see instructions below
+        endpoint: "https://Inkdera.us6.list-manage.com/subscribe/post?u=3637eeb82811147446f9ee9e0&amp;id=3194e8106d", // string; add your MC list endpoint here; see instructions below
         timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
       },
     },

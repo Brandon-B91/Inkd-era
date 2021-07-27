@@ -1,9 +1,9 @@
 ---
-title: "Expensive skin"
+title: "Expensive Skin"
 date: 2021-3-05 08:46:00
 image: '../../../images/womens tshirts/expensiveskinTSHIRT.png'
 image2: '../../../images/womens tshirts/tshirtback.png'
-description: "Your tattoos aren't cheap show them off!"
+description: "Your tattoos aren't cheap, show them off!"
 price: 20
 weight: 150
 customField:

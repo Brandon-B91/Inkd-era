@@ -1,9 +1,9 @@
 ---
-title: "Lets get inkd womens tank top"
+title: "Let's Get Inkd Womens Tank Top"
 date: 2021-3-05 08:46:00
 image: '../../../images/womens tanks/letsgetinkdWTANK.png'
 image2: '../../../images/womens tanks/womenstankback.png'
-description: "What do you do, if the hottie next door ask you this? C'mon now... Don't lie!"
+description: "What do you do, if the hottie next door askS you this? C'mon now... Don't lie!"
 price: 20
 weight: 150
 customField:

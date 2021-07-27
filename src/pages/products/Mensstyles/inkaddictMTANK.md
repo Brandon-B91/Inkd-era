@@ -1,9 +1,9 @@
 ---
-title: "Ink addict tank top"
+title: "Ink Addict Tank Top"
 date: 2021-3-05 08:46:00
 image: '../../../images/mens tanks/inkaddictMTANK.png'
 image2: '../../../images/mens tanks/menstankback.png'
-description: "Are you ready to stand out? Well then you need to rock this and show the world how you really feel"
+description: "Once you start, you just can't stop!"
 price: 20
 weight: 150
 customField:

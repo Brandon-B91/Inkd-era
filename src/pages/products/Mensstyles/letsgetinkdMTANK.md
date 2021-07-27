@@ -1,9 +1,9 @@
 ---
-title: "Lets get inkd tank top"
+title: "Let's Get Inkd Tank Top"
 date: 2021-3-05 08:46:00
 image: '../../../images/mens tanks/letsgetinkdMTANK.png'
 image2: '../../../images/mens tanks/menstankback.png'
-description: "What do you do, if the hottie next door ask you this? C'mon now... Don't lie!"
+description: "What do you do, if the hottie next door askS you this? C'mon now... Don't lie!"
 price: 20
 weight: 150
 customField:

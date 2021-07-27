@@ -1,9 +1,9 @@
 ---
-title: "Inkd girls do it better womens tank top"
+title: "Ink'd Girls Do It Better Womens Tank Top"
 date: 2021-3-05 08:46:00
 image: '../../../images/womens tanks/inkdgirlsdoitbetterWTANK.png'
 image2: '../../../images/womens tanks/womenstankback.png'
-description: "The facts don't lie! prove us wrong!"
+description: "The facts don't lie! Prove us wrong!"
 price: 20
 weight: 150
 customField:
