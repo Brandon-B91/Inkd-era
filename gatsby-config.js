@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Inkd Era`,
+    title: `Ink'd Era`,
     titleTemplate: `%s - Inkd era clothing`,
     description: `Clothing and brand built for tattoos and tattoed culture including pierced and alternative styles!`,
     url: "https://inkdera.com",
@@ -17,8 +17,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: `Inkd era`,
-        short_name: `Inkd era`,
+        name: `Ink'd Era`,
+        short_name: `Ink'd Era`,
         start_url: `/`,
         background_color: `#000000`,
         theme_color: `#000000`,
@@ -67,7 +67,7 @@ module.exports = {
         background_color: `#000`,
         theme_color: `#fafafa`,
         display: `standalone`,
-        icon: `src/images/InkdEraLogo.png`,
+        icon: `src/images/inkdEraLogo.png`,
       },
     },
       "gatsby-plugin-offline",
