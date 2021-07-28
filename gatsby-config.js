@@ -76,7 +76,7 @@ module.exports = {
       options: {
         version: "3.0.29",
         publicApiKey:
-          "YmNjNDg4MjAtYjI0NS00ZTBjLTkxOTEtNjBhN2NmNzNmMDNlNjM3NDY0MDk2MTY2MzA1MTMz", // use public api key here or in environment variable
+          "NzM0Y2QxZDAtOTliNS00NTU4LTliZGYtMjUyNTZjMjc4MDRiNjM3NDY0MDk2MTY2MzA1MTMz", // use public api key here or in environment variable
         defaultLang: "en",
         currency: "usd",
         openCartOnAdd: true,
