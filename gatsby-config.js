@@ -70,7 +70,6 @@ module.exports = {
         icon: `src/images/inkdEraLogo.png`,
       },
     },
-      "gatsby-plugin-offline",
     {
       resolve: `gatsby-plugin-snipcart-advanced`,
       options: {
