@@ -5,7 +5,7 @@ module.exports = {
     description: `Clothing and brand built for tattoos and tattoed culture including pierced and alternative styles!`,
     url: "https://inkdera.com",
     siteUrl: "https://inkdera.com",
-    image: "src/images/inkdEraLogoWhite.png",
+    image: "src/images/inkdEraLogo.png",
     twitterUsername: "@InkdEra",
   },
   plugins: [
@@ -23,7 +23,7 @@ module.exports = {
         background_color: `#000000`,
         theme_color: `#000000`,
         display: `standalone`,
-        icon: "src/images/inkdEraLogoWhite.png",
+        icon: "src/images/inkdEraLogo.png",
       },
     },
     "gatsby-transformer-remark",
