@@ -1,17 +1,15 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { graphql, Link } from "gatsby";
-import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 import SEO from "../components/seo"
 import "../styles/main.scss";
 
 const Accessories = ({ data }) => {
-  const post = data.markdownRemark;
-  // const src = getSrc(post.frontmatter.image);
   return (
     <Layout>
-      <SEO title={post.title} description={post.description}></SEO>
+      <SEO title="Inkd Era accessories" description="stickers, car decals, and mystery packs all exclusive to Inkd Era"></SEO>
       {/* <h1>{data.site.siteMetadata.title}</h1> */}
       <h2 className="text-light mt-5 mb-4">Accessories</h2>
       <div>
