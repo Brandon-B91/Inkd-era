@@ -8,10 +8,10 @@ import "../styles/main.scss";
 
 const MensStyles = ({ data }) => {
   const post = data.markdownRemark;
-  const src = getSrc(post.frontmatter.image);
+  // const src = getSrc(post.frontmatter.image);
   return (
     <Layout>
-      <SEO title={post.title} description={post.description} image={src}></SEO>
+      <SEO title={post.title} description={post.description}></SEO>
       {/* <h1>{data.site.siteMetadata.title}</h1> */}
       <h2 className="text-light mt-5 mb-4">Mens Styles </h2>
       <div>
