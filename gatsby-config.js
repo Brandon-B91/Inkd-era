@@ -14,6 +14,8 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-catch-links",
+    "gatsby-plugin-robots-txt",
+    "gatsby-plugin-advanced-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
