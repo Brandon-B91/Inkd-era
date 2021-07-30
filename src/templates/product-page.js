@@ -54,20 +54,22 @@ const ProductPage = ({ data, pageContext }) => {
                   <GatsbyImage
                     className="card-image-top"
                     image={image}
-                    alt={post.description}
+                    alt={post.frontmatter.description}
                   />
                 </div>
                 <div style={{ backgroundColor: "white"}}>
                   <GatsbyImage
                     className="card-image-top"
                     image={imageback}
-                    alt={post.description}
+                    alt={post.frontmatter.description}
                   />
                 </div>
               </Slider>
               <CardBody>
                 <CardTitle className="h1 text-light text-wrap">
-                  {post.frontmatter.title}
+                  <h1>
+                    {post.frontmatter.title}
+                  </h1>
                 </CardTitle>
                 {/* <div dangerouslySetInnerHTML={{ __html: post.html }} /> */}
                 <CardText>{post.frontmatter.description}</CardText>

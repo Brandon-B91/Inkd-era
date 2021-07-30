@@ -1,13 +1,17 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { graphql, Link } from "gatsby";
-import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
 import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
+import SEO from "../components/seo";
 import "../styles/main.scss";
 
 const MensStyles = ({ data }) => {
+  const post = data.markdownRemark;
+  const src = getSrc(post.frontmatter.image);
   return (
     <Layout>
+      <SEO title={post.title} description={post.description} image={src}></SEO>
       {/* <h1>{data.site.siteMetadata.title}</h1> */}
       <h2 className="text-light mt-5 mb-4">Mens Styles </h2>
       <div>
@@ -47,13 +51,16 @@ const MensStyles = ({ data }) => {
             </div>
           );
         })}
-          <Link to="/Contest">
-            <div className="contestLink d-flex flex-column justify-content-center">
-              <h1 className="text-light"> Contests</h1>
-              <h3 className="text-light"> Do you like free things? Who doesn't!</h3>
-              <h5 className="text-light">Click here to learn more!</h5>
-            </div>
-          </Link>
+        <Link to="/Contest">
+          <div className="contestLink d-flex flex-column justify-content-center">
+            <h1 className="text-light"> Contests</h1>
+            <h3 className="text-light">
+              {" "}
+              Do you like free things? Who doesn't!
+            </h3>
+            <h5 className="text-light">Click here to learn more!</h5>
+          </div>
+        </Link>
       </div>
     </Layout>
   );
@@ -66,8 +73,10 @@ export const query = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC } 
-      filter: { frontmatter: { gender: { eq: "male" }}}) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { gender: { eq: "male" } } }
+    ) {
       totalCount
       edges {
         node {
