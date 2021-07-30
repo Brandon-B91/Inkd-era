@@ -23,7 +23,7 @@ const ImgSlide = () => {
           <StaticImage
             className="mask"
             src="../images/grp1.jpeg"
-            alt="icon"
+            alt="Group photo for inkd era 1"
             placeholder="blurred"
             layout="constrained"
             width={1600}
@@ -35,7 +35,7 @@ const ImgSlide = () => {
           <StaticImage
             className="mask"
             src="../images/grp2.jpeg"
-            alt="icon"
+            alt="Group photo for inkd era 2"
             placeholder="blurred"
             layout="constrained"
             width={1600}
@@ -46,7 +46,7 @@ const ImgSlide = () => {
         <div>
           <StaticImage
             src="../images/grp3.jpeg"
-            alt="icon"
+            alt="Group photo for inkd era 3"
             placeholder="blurred"
             layout="constrained"
             width={1600}

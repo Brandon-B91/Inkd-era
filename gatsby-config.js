@@ -61,18 +61,6 @@ module.exports = {
       __key: "pages",
     },
     {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Inkd Era`,
-        short_name: `Inkd era`,
-        start_url: `/`,
-        background_color: `#000`,
-        theme_color: `#fafafa`,
-        display: `standalone`,
-        icon: `src/images/inkdEraLogo.png`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-snipcart-advanced`,
       options: {
         version: "3.0.29",
