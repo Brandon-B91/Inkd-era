@@ -15,6 +15,7 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-robots-txt",
+    "gatsby-plugin-netlify",
     "gatsby-plugin-advanced-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
