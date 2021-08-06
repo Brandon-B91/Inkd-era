@@ -31,7 +31,7 @@ const ImgSlide = () => {
             quality={100}
           />
         </div>
-        <div>
+        {/* <div>
           <StaticImage
             className="mask"
             src="../images/grp2.jpeg"
@@ -53,7 +53,7 @@ const ImgSlide = () => {
             height={600}
             quality={100}
           />
-        </div>
+        </div> */}
       </Slider>
     </div>
   );

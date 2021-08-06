@@ -108,6 +108,11 @@ h1 {
 
   }
 
+  .slick-dots li button:before {
+    color: white !important;
+    margin-bottom: 10px;
+  }
+
   .full-page {
     margin-top: 60px;
     min-height: 100vh;

@@ -1,11 +1,15 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { graphql, Link } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
 import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 import ImgSlide from "../components/Slider";
 import SEO from "../components/seo";
-import "../styles/main.scss";
+import MenSlider from "../components/menSlider"
+import WomenSlider from "../components/womenSlider"
+import AccessorySlider from "../components/Accessories"
+import "../styles/main.scss"; 
+
 
 const IndexPage = ({ data }) => {
   return (
@@ -17,11 +21,38 @@ const IndexPage = ({ data }) => {
       <div className="img-slide">
         <ImgSlide></ImgSlide>
       </div>
+      <MenSlider></MenSlider>
+      <div>
+          <StaticImage
+            className="mask"
+            src="../images/grp2.jpeg"
+            alt="Group photo for inkd era 2"
+            placeholder="blurred"
+            layout="constrained"
+            width={1600}
+            height={600}
+            quality={100}
+          />
+        </div>
+        <WomenSlider></WomenSlider>
+        <div>
+          <StaticImage
+            className="mask"
+            src="../images/grp3.jpeg"
+            alt="Group photo for inkd era 2"
+            placeholder="blurred"
+            layout="constrained"
+            width={1600}
+            height={600}
+            quality={100}
+          />
+        </div>
+        <AccessorySlider></AccessorySlider>
       {/* <SpringSummerLine></SpringSummerLine> */}
       {/* <h1>{data.site.siteMetadata.title}</h1> */}
-      <h2 className="text-light mt-3 mb-4">Newest Arrivals! </h2>
+      <h2 className="text-light mt-3 mb-4">Newest Arrivals!</h2>
       <div>
-        {data.allMarkdownRemark.edges.map(({ node }) => {
+        {/* {data.allMarkdownRemark.edges.map(({ node }) => {
           const image = getImage(node.frontmatter.image);
           return (
             <div className="d-inline-flex">
@@ -42,7 +73,6 @@ const IndexPage = ({ data }) => {
                       </CardTitle>
                     </Link>
                     <CardSubtitle>{node.frontmatter.description}</CardSubtitle>
-                    {/* <CardSubtitle>{node.excerpt}</CardSubtitle>   */}
                     <CardSubtitle className="float-left mt-5">
                       Price: ${node.frontmatter.price}
                     </CardSubtitle>
@@ -56,30 +86,24 @@ const IndexPage = ({ data }) => {
               </div>
             </div>
           );
-        })}
-        <h3 className="text-light text-center mt-3 mb-2">
-          {" "}
-          Want to see our full selection?{" "}
-        </h3>
-        <Link to="/Men">
-          <h3 className="btn btn-danger text-light m-1">Mens styles</h3>
-        </Link>
-        <Link to="/Women">
-          <h3 className="btn btn-danger text-light m-1">Womens styles</h3>
-        </Link>
-        <Link to="/Accessories">
-          <h3 className="btn btn-danger text-light m-1">Accessories</h3>
-        </Link>
-        <Link to="/Contest">
-          <div className="contestLink d-flex flex-column justify-content-center mt-3">
-            <h1 className="text-light"> Contests</h1>
-            <h3 className="text-light">
-              {" "}
-              Do you like free things? Who doesn't!
-            </h3>
-            <h5 className="text-light">Click here to learn more!</h5>
-          </div>
-        </Link>
+        })} */}
+          {/* <h3 className="text-light text-center mt-3 mb-2"> Want to see our full selection? </h3>
+          <Link to="/Men">
+            <h3 className="btn btn-danger text-light m-1">Mens styles</h3>
+          </Link>
+          <Link to="/Women">
+            <h3 className="btn btn-danger text-light m-1">Womens styles</h3>
+          </Link>
+          <Link to="/Accessories">
+            <h3 className="btn btn-danger text-light m-1">Accessories</h3>
+          </Link> */}
+          <Link to="/Contest">
+            <div className="contestLink d-flex flex-column justify-content-center mt-3">
+              <h1 className="text-light"> Contests</h1>
+              <h3 className="text-light"> Do you like free things? Who doesn't!</h3>
+              <h5 className="text-light">Click here to learn more!</h5>
+            </div>
+          </Link>
       </div>
     </Layout>
   );
@@ -93,11 +117,10 @@ export const query = graphql`
         description
       }
     }
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { display: { eq: "Y" } } }
       limit: 16
-    ) {
+      ) {
       totalCount
       edges {
         node {
