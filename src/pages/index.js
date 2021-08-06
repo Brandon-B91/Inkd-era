@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => {
             src="../images/grp2.jpeg"
             alt="Group photo for inkd era 2"
             placeholder="blurred"
-            layout="constrained"
+            layout="fullWidth"
             width={1600}
             height={600}
             quality={100}
@@ -41,7 +41,7 @@ const IndexPage = ({ data }) => {
             src="../images/grp3.jpeg"
             alt="Group photo for inkd era 2"
             placeholder="blurred"
-            layout="constrained"
+            layout="fullWidth"
             width={1600}
             height={600}
             quality={100}

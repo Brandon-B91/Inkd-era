@@ -25,7 +25,7 @@ const ImgSlide = () => {
             src="../images/grp1.jpeg"
             alt="Group photo for inkd era 1"
             placeholder="blurred"
-            layout="constrained"
+            layout="fullWidth"
             width={1600}
             height={600}
             quality={100}

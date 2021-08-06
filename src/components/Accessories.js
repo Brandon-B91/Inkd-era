@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const settings = {
-  className: "center",
+  // className: "center",
   // centerMode: "center",
   autoplay: true,
   autoplaySpeed: 1,
@@ -15,7 +15,7 @@ const settings = {
   dots: true,
   infinite: true,
   speed: 5000,
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 1,
   responsive: [
     {
