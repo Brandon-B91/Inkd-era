@@ -7,24 +7,23 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const settings = {
-  // className: "center",
-  // centerMode: "center",
-  autoplay: true,
-  autoplaySpeed: 1,
-  arrows: false,
-  dots: true,
-  infinite: true,
-  speed: 5000,
-  slidesToShow: 4,
-  slidesToScroll: 1,
+ className: "center",
+ centerMode: "center",
+ autoplay: false,
+ autoplaySpeed: 1,
+ arrows: false,
+ dots: true,
+ infinite: true,
+ speed: 500,
+ slidesToShow: 4,
+ slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 824,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
-        infinite: true,
-        dots: true
+        initialSlide: 1
       }
     },
     {
@@ -48,7 +47,7 @@ const settings = {
 const AccessorySlider = () => (
   <div>
     {/* <div> */}
-    <h2 className="text-light m-3">Accessories</h2>
+    <h1 className="text-light m-3">Accessories</h1>
     <StaticQuery
       query={mensSlider}
       render={(data) => (
@@ -90,7 +89,7 @@ const AccessorySlider = () => (
       )}
     />
     <Link to="/Accessories">
-      <h3 className="btn btn-danger text-light mt-5 mb-5">See our full selection</h3>
+      <h3 className="btn btn-danger text-light mt-5 mb-5">See full accessory selection</h3>
     </Link>
     {/* </div> */}
   </div>

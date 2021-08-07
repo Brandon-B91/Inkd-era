@@ -3,13 +3,11 @@ import Layout from "../components/Layout";
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
 import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
-import ImgSlide from "../components/Slider";
 import SEO from "../components/seo";
-import MenSlider from "../components/menSlider"
-import WomenSlider from "../components/womenSlider"
-import AccessorySlider from "../components/Accessories"
-import "../styles/main.scss"; 
-
+import MenSlider from "../components/menSlider";
+import WomenSlider from "../components/womenSlider";
+import AccessorySlider from "../components/Accessories";
+import "../styles/main.scss";
 
 const IndexPage = ({ data }) => {
   return (
@@ -18,39 +16,53 @@ const IndexPage = ({ data }) => {
         title={data.site.siteMetadata.title}
         description={data.site.siteMetadata.description}
       ></SEO>
+      <div>
+        <p className="mt-5 text-dark bg-light">
+          Free shipping on all orders over $50!
+        </p>
+      </div>
       <div className="img-slide">
-        <ImgSlide></ImgSlide>
+        <StaticImage
+          className="mask"
+          src="../images/grp1.jpeg"
+          alt="Group photo for inkd era 1"
+          placeholder="blurred"
+          layout="fullWidth"
+          // width={1600}
+          // height={600}
+          quality={100}
+        />{" "}
       </div>
       <MenSlider></MenSlider>
       <div>
-          <StaticImage
-            className="mask"
-            src="../images/grp2.jpeg"
-            alt="Group photo for inkd era 2"
-            placeholder="blurred"
-            layout="fullWidth"
-            width={1600}
-            height={600}
-            quality={100}
-          />
-        </div>
-        <WomenSlider></WomenSlider>
-        <div>
-          <StaticImage
-            className="mask"
-            src="../images/grp3.jpeg"
-            alt="Group photo for inkd era 2"
-            placeholder="blurred"
-            layout="fullWidth"
-            width={1600}
-            height={600}
-            quality={100}
-          />
-        </div>
-        <AccessorySlider></AccessorySlider>
+        <StaticImage
+          className="mask"
+          src="../images/grp2.jpeg"
+          alt="Group photo for inkd era 2"
+          placeholder="blurred"
+          layout="fullWidth"
+          // width={1600}
+          // height={600}
+          quality={100}
+        />
+      </div>
+      <WomenSlider></WomenSlider>
+      <div>
+        <StaticImage
+          className="mask"
+          src="../images/grp3.jpeg"
+          alt="Group photo for inkd era 2"
+          placeholder="blurred"
+          layout="fullWidth"
+          // width={1600}
+          // height={600}
+          quality={100}
+        />
+      </div>
+      <AccessorySlider></AccessorySlider>
       {/* <SpringSummerLine></SpringSummerLine> */}
       {/* <h1>{data.site.siteMetadata.title}</h1> */}
-      <h2 className="text-light mt-3 mb-4">Newest Arrivals!</h2>
+      {/* <h2 className="text-light mt-3 mb-4">Newest Arrivals!</h2> */}
       <div>
         {/* {data.allMarkdownRemark.edges.map(({ node }) => {
           const image = getImage(node.frontmatter.image);
@@ -87,7 +99,7 @@ const IndexPage = ({ data }) => {
             </div>
           );
         })} */}
-          {/* <h3 className="text-light text-center mt-3 mb-2"> Want to see our full selection? </h3>
+        {/* <h3 className="text-light text-center mt-3 mb-2"> Want to see our full selection? </h3>
           <Link to="/Men">
             <h3 className="btn btn-danger text-light m-1">Mens styles</h3>
           </Link>
@@ -97,13 +109,16 @@ const IndexPage = ({ data }) => {
           <Link to="/Accessories">
             <h3 className="btn btn-danger text-light m-1">Accessories</h3>
           </Link> */}
-          <Link to="/Contest">
-            <div className="contestLink d-flex flex-column justify-content-center mt-3">
-              <h1 className="text-light"> Contests</h1>
-              <h3 className="text-light"> Do you like free things? Who doesn't!</h3>
-              <h5 className="text-light">Click here to learn more!</h5>
-            </div>
-          </Link>
+        <Link to="/Contest">
+          <div className="contestLink d-flex flex-column justify-content-center mt-3">
+            <h1 className="text-light"> Contests</h1>
+            <h3 className="text-light">
+              {" "}
+              Do you like free things? Who doesn't!
+            </h3>
+            <h5 className="text-light">Click here to learn more!</h5>
+          </div>
+        </Link>
       </div>
     </Layout>
   );
@@ -117,10 +132,11 @@ export const query = graphql`
         description
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { display: { eq: "Y" } } }
       limit: 16
-      ) {
+    ) {
       totalCount
       edges {
         node {

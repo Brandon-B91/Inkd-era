@@ -11,7 +11,7 @@ const Accessories = ({ data }) => {
     <Layout>
       <SEO title="Inkd Era accessories" description="stickers, car decals, and mystery packs all exclusive to Inkd Era"></SEO>
       {/* <h1>{data.site.siteMetadata.title}</h1> */}
-      <h2 className="text-light mt-5 mb-4">Accessories</h2>
+      <h1 className="text-light mt-5 mb-4">Accessories</h1>
       <div>
         {data.allMarkdownRemark.edges.map(({ node }) => {
           const image = getImage(node.frontmatter.image);

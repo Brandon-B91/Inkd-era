@@ -1,15 +1,13 @@
 import React from "react";
 import Layout from "../components/Layout";
-import ImgSlide from "../components/Slider";
 
 const Contact = () => {
   return (
     <div>
       <Layout>
         <div className="full-page text-light">
-          <ImgSlide></ImgSlide>
           <h1>Want to get in touch with us?</h1>
-          <h3>Heres how!</h3>
+          <h2>Heres how!</h2>
           <p>
             Of course you can always reach out to us on social media or thruough our
             E-mail address. We would love to hear from you for general feedback,

@@ -5,7 +5,7 @@ import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 
 const BestSellers = () => (
   <div>
-    <h3>Check out our best sellers!</h3>
+    <h1>Check out our best sellers!</h1>
     <StaticQuery
       query={bestSellerQuery}
       render={(data) => (

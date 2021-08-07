@@ -1,15 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
-import ImgSlide from "../components/Slider";
 
 const Contest = () => {
   return (
     <div>
       <Layout>
         <div className="full-page">
-          <div className="img-slide">
-            <ImgSlide></ImgSlide>
-          </div>
           <div className="contest-page text-light">
             <h1>Contests!</h1>
             <p>
@@ -37,7 +33,7 @@ const Contest = () => {
               So check out our social media where we will ask for our communitys
               opinion on who will win.
             </p>
-            <h3>So what contest do we run and how can you participate?</h3>
+            <h4>So what contest do we run and how can you participate?</h4>
             <p>Well that is pretty simple let's break it down</p>
             <ul>
               <li>

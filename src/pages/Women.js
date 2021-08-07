@@ -11,7 +11,7 @@ const WomensStyles = ({ data }) => {
     <Layout>
       <SEO title="=Womens styles" description="Mens style Inkd Era shirts and tank top"s></SEO>
       {/* <h1>{data.site.siteMetadata.title}</h1> */}
-      <h2 className="text-light mt-5 mb-4">Womens Styles </h2>
+      <h1 className="text-light mt-5 mb-4">Womens Styles </h1>
       <div>
         {data.allMarkdownRemark.edges.map(({ node }) => {
           const image = getImage(node.frontmatter.image);
