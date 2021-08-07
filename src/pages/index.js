@@ -24,6 +24,7 @@ const IndexPage = ({ data }) => {
       <div className="img-slide">
         <StaticImage
           className="mask"
+          loading="eager"
           src="../images/grp1.jpeg"
           alt="Group photo for inkd era 1"
           placeholder="blurred"
@@ -37,6 +38,7 @@ const IndexPage = ({ data }) => {
       <div>
         <StaticImage
           className="mask"
+          loading="lazy"
           src="../images/grp2.jpeg"
           alt="Group photo for inkd era 2"
           placeholder="blurred"
@@ -50,6 +52,7 @@ const IndexPage = ({ data }) => {
       <div>
         <StaticImage
           className="mask"
+          loading="lazy"
           src="../images/grp3.jpeg"
           alt="Group photo for inkd era 2"
           placeholder="blurred"

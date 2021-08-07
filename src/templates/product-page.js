@@ -62,6 +62,7 @@ const ProductPage = ({ data, pageContext }) => {
                     className="card-image-top"
                     image={imageback}
                     alt={post.frontmatter.description}
+                    loading="lazy"
                   />
                 </div>
               </Slider>

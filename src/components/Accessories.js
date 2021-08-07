@@ -61,6 +61,7 @@ const AccessorySlider = () => (
                       className="card-img-top"
                       image={getImage(node.frontmatter.image)}
                       alt={node.frontmatter.description}
+                      loading="lazy"
                     />
                   </Link>
                   <hr />

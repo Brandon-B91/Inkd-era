@@ -24,6 +24,7 @@ const MensStyles = ({ data }) => {
                       className="card-img-top"
                       image={image}
                       alt={node.frontmatter.description}
+                      loading="lazy"
                     />
                   </Link>
                   <hr />
