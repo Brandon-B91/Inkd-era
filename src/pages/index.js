@@ -24,15 +24,12 @@ const IndexPage = ({ data }) => {
       <div className="img-slide">
         <StaticImage
           className="mask"
-          loading="eager"
+          loading="lazy"
           src="../images/grp1.jpeg"
           alt="Group photo for inkd era 1"
           placeholder="blurred"
           layout="fullWidth"
-          // width={1600}
-          // height={600}
-          quality={100}
-        />{" "}
+        />
       </div>
       <MenSlider></MenSlider>
       <div>
@@ -43,9 +40,6 @@ const IndexPage = ({ data }) => {
           alt="Group photo for inkd era 2"
           placeholder="blurred"
           layout="fullWidth"
-          // width={1600}
-          // height={600}
-          quality={100}
         />
       </div>
       <WomenSlider></WomenSlider>
@@ -57,15 +51,10 @@ const IndexPage = ({ data }) => {
           alt="Group photo for inkd era 2"
           placeholder="blurred"
           layout="fullWidth"
-          // width={1600}
-          // height={600}
-          quality={100}
         />
       </div>
       <AccessorySlider></AccessorySlider>
       {/* <SpringSummerLine></SpringSummerLine> */}
-      {/* <h1>{data.site.siteMetadata.title}</h1> */}
-      {/* <h2 className="text-light mt-3 mb-4">Newest Arrivals!</h2> */}
       <div>
         {/* {data.allMarkdownRemark.edges.map(({ node }) => {
           const image = getImage(node.frontmatter.image);
@@ -114,7 +103,7 @@ const IndexPage = ({ data }) => {
           </Link> */}
         <Link to="/Contest">
           <div className="contestLink d-flex flex-column justify-content-center mt-3">
-            <h1 className="text-light"> Contests</h1>
+            <h2 className="text-light"> Contests</h2>
             <h3 className="text-light">
               {" "}
               Do you like free things? Who doesn't!

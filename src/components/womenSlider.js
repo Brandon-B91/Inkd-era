@@ -11,7 +11,7 @@ const settings = {
  centerMode: "center",
  autoplay: false,
  autoplaySpeed: 1,
- arrows: false,
+ arrows: true,
  dots: true,
  infinite: true,
  speed: 500,
@@ -22,7 +22,7 @@ const settings = {
       breakpoint: 824,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         initialSlide: 1
       }
     },
@@ -30,7 +30,7 @@ const settings = {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         initialSlide: 2
       }
     },
@@ -45,7 +45,7 @@ const settings = {
 };
 
 const MenSlider = () => (
-  <div>
+  <div className="sliderSlide">
     {/* <div> */}
     <h2 className="text-light m-3">Womens</h2>
     <StaticQuery
@@ -123,7 +123,6 @@ const mensSlider = graphql`
                 gatsbyImageData(
                   layout: CONSTRAINED
                   placeholder: BLURRED
-                  formats: [AUTO, JPG]
                   width: 300
                   height: 300
                   transformOptions: {cropFocus: CENTER}

@@ -52,7 +52,7 @@ const Accessories = ({ data }) => {
         })}
           <Link to="/Contest">
             <div className="contestLink d-flex flex-column justify-content-center">
-              <h1 className="text-light"> Contests</h1>
+              <h2 className="text-light"> Contests</h2>
               <h3 className="text-light"> Do you like free things? Who doesn't!</h3>
               <h5 className="text-light">Click here to learn more!</h5>
             </div>
