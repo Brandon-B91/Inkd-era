@@ -15,6 +15,7 @@ const IndexPage = ({ data }) => {
       <SEO
         title={data.site.siteMetadata.title}
         description={data.site.siteMetadata.description}
+        image={data.site.siteMetadata.image}
       ></SEO>
       <div>
         <p className="mt-5 text-dark bg-light">
