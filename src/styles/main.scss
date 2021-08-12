@@ -154,6 +154,13 @@ h1 {
 
   }
 
+  .bestSellers {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+
   a:hover {
     color: gray;
   }

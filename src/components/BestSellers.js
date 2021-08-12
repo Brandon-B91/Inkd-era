@@ -9,8 +9,9 @@ const BestSellers = () => (
     <StaticQuery
       query={bestSellerQuery}
       render={(data) => (
-        <div>
+        <div className="d-flex flex-column justify-center">
           {data.allMarkdownRemark.edges.map(({ node }) => (
+            <div className="bestSellers">
             <Card className="m-4 index-card" 
             key={node.id}>
               <Link to={node.fields.slug}>
@@ -39,6 +40,7 @@ const BestSellers = () => (
                 </CardSubtitle>
               </CardBody>
             </Card>
+            </div>
           ))}
         </div>
       )}
