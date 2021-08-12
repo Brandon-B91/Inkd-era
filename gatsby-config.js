@@ -16,6 +16,7 @@ module.exports = {
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-advanced-sitemap`,
+    `gatsby-plugin-preload-fonts`,
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {

@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => {
         <StaticImage
           className="mask"
           loading="lazy"
-          src="../images/grp1.jpeg"
+          src="../images/group1.jpeg"
           alt="Group photo for inkd era 1"
           placeholder="blurred"
           layout="fullWidth"
@@ -37,7 +37,7 @@ const IndexPage = ({ data }) => {
         <StaticImage
           className="mask"
           loading="lazy"
-          src="../images/grp2.jpeg"
+          src="../images/group2.jpeg"
           alt="Group photo for inkd era 2"
           placeholder="blurred"
           layout="fullWidth"
@@ -48,7 +48,7 @@ const IndexPage = ({ data }) => {
         <StaticImage
           className="mask"
           loading="lazy"
-          src="../images/grp3.jpeg"
+          src="../images/group3.jpeg"
           alt="Group photo for inkd era 2"
           placeholder="blurred"
           layout="fullWidth"
