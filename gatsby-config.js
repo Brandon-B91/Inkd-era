@@ -5,7 +5,7 @@ module.exports = {
     description: `Clothing and brand built for tattoos and tattoed culture including pierced and alternative styles!`,
     url: "https://inkdera.com",
     siteUrl: "https://inkdera.com",
-    image: "/src/images/inkdEraLogo.png",
+    image: "/src/images/inkdEralogo.jpeg",
     twitterUsername: "@InkdEra",
   },
   plugins: [
