@@ -9,37 +9,36 @@ const BestSellers = () => (
     <StaticQuery
       query={bestSellerQuery}
       render={(data) => (
-        <div className="d-flex flex-column justify-center">
+        <div>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <div className="bestSellers">
-            <Card className="m-4 index-card" 
-            key={node.id}>
-              <Link to={node.fields.slug}>
-                <GatsbyImage
-                  className="card-img-top"
-                  image={getImage(node.frontmatter.image)}
-                  alt={node.frontmatter.description}
-                />
-              </Link>
-              <hr />
-              <CardBody>
+              <Card className="m-4 index-card" key={node.id}>
                 <Link to={node.fields.slug}>
-                  <CardTitle className="h4 text-light text-wrap">
-                    {node.frontmatter.title}
-                  </CardTitle>
+                  <GatsbyImage
+                    className="card-img-top"
+                    image={getImage(node.frontmatter.image)}
+                    alt={node.frontmatter.description}
+                  />
                 </Link>
-                <CardSubtitle>{node.frontmatter.description}</CardSubtitle>
-                {/* <CardSubtitle>{node.excerpt}</CardSubtitle>   */}
-                <CardSubtitle className="float-left mt-5">
-                  Price: ${node.frontmatter.price}
-                </CardSubtitle>
-                <CardSubtitle>
-                  <Badge color="danger float-right mt-5">
-                    {node.frontmatter.tag}
-                  </Badge>
-                </CardSubtitle>
-              </CardBody>
-            </Card>
+                <hr />
+                <CardBody>
+                  <Link to={node.fields.slug}>
+                    <CardTitle className="h4 text-light text-wrap">
+                      {node.frontmatter.title}
+                    </CardTitle>
+                  </Link>
+                  <CardSubtitle>{node.frontmatter.description}</CardSubtitle>
+                  {/* <CardSubtitle>{node.excerpt}</CardSubtitle>   */}
+                  <CardSubtitle className="float-left mt-5">
+                    Price: ${node.frontmatter.price}
+                  </CardSubtitle>
+                  <CardSubtitle>
+                    <Badge color="danger float-right mt-5">
+                      {node.frontmatter.tag}
+                    </Badge>
+                  </CardSubtitle>
+                </CardBody>
+              </Card>
             </div>
           ))}
         </div>

@@ -179,10 +179,15 @@ h1 {
     text-align: left;
   }
 
+  .absolute {
+    position: absolute;
+  }
+
   .contestLink {
     min-height: 300px;
     width: 100%;
     background: url('../images/contest.png') center center/cover no-repeat;
+    
   }
 
   .ul-order {

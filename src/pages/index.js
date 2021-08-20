@@ -102,16 +102,15 @@ const IndexPage = ({ data }) => {
           <Link to="/Accessories">
             <h3 className="btn btn-danger text-light m-1">Accessories</h3>
           </Link> */}
-        <Link to="/Contest">
-          <div className="contestLink d-flex flex-column justify-content-center mt-3">
-            <h2 className="text-light"> Contests</h2>
-            <h3 className="text-light">
-              {" "}
-              Do you like free things? Who doesn't!
-            </h3>
-            <h5 className="text-light">Click here to learn more!</h5>
-          </div>
-        </Link>
+          <Link to="/Contest">
+            <div className="contestLink d-flex flex-column justify-content-center mt-3 contestLink lazy">
+              <h2 className="text-light"> Contests</h2>
+              <h3 className="text-light">
+                Do you like free things? Who doesn't!
+              </h3>
+              <h5 className="text-light">Click here to learn more!</h5>
+            </div>
+          </Link>
       </div>
     </Layout>
   );
