@@ -40,8 +40,8 @@ const ProductPage = ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO 
-        title={post.title} 
-        description={post.description}
+        title={post.frontmatter.title} 
+        description={post.frontmatter.description}
         image={src}
       >
       </SEO>

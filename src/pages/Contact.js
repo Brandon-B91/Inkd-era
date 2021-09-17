@@ -1,10 +1,13 @@
 import React from "react";
 import Layout from "../components/Layout";
+import SEO from "../components/seo"
+
 
 const Contact = () => {
   return (
     <div>
       <Layout>
+      <SEO title="Inkd era Contact" description="Contact page for Ink'd Era"></SEO>
         <div className="full-page text-light">
           <h1>Want to get in touch with us?</h1>
           <h2>Heres how!</h2>

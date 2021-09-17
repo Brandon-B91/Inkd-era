@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => {
       ></SEO>
       <div>
         <p className="mt-5 text-dark bg-light">
-          Free shipping on all orders over $50!
+          Free shipping on all orders over $60!
         </p>
       </div>
       <div className="img-slide">
