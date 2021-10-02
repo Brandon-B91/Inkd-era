@@ -16,7 +16,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 }
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  const result = await graphql(`
+  const products = await graphql(`
     query {
       allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC } )
        {
@@ -44,7 +44,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  products.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/templates/product-page.js`),
@@ -55,5 +55,6 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+  
 }
 
