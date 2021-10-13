@@ -9,8 +9,10 @@ import "../styles/main.scss";
 const MensStyles = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Mens Styles" description="Mens style Inkd Era shirts and tank tops"></SEO>
-      {/* <h1>{data.site.siteMetadata.title}</h1> */}
+      <SEO
+        title="Mens Styles"
+        description="Mens style Inkd Era shirts and tank tops"
+      ></SEO>
       <h1 className="text-light mt-5 mb-4">Mens Styles </h1>
       <div>
         {data.allMarkdownRemark.edges.map(({ node }) => {
@@ -52,11 +54,11 @@ const MensStyles = ({ data }) => {
         })}
         <Link to="/Contest">
           <div className="contestLink d-flex flex-column justify-content-center">
-            <h1 className="text-light"> Contests</h1>
-            <h3 className="text-light">
+            <h2 className="text-light"> Contests</h2>
+            <h4 className="text-light">
               {" "}
               Do you like free things? Who doesn't!
-            </h3>
+            </h4>
             <h5 className="text-light">Click here to learn more!</h5>
           </div>
         </Link>

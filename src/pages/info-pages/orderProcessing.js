@@ -1,10 +1,15 @@
 import React from "react";
 import Layout from "../../components/Layout";
+import SEO from "../../components/seo";
 
-const orderProcessing = () => {
+const orderProcessing = ({ data }) => {
   return (
     <div>
       <Layout>
+        <SEO
+          title="Order processing."
+          description="Ink'd Era order processsing page."
+        ></SEO>
         <div className="mt-5 text-light">
           <h1 className="mt-3"> Order Processing.</h1>
           <p style={{ width: "60%", margin: "20px auto" }}>

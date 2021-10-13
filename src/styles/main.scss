@@ -94,11 +94,20 @@ h1 {
       padding: 3px;
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
    }
+
+   .bottom-nav {
+    display: flex;
+    justify-content: space-evenly;
+   }
   }
 
    .index-card {
     max-width: 300px;
 
+   }
+
+   .wide-card {
+     width: 100%;
    }
    
   .card {
@@ -111,6 +120,45 @@ h1 {
       opacity: 0.9;
     }
 
+  }
+
+  .shopAll {
+    background-image: url("../images/group1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+    min-height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .shopAll h2, h3 {
+    color: white;
+  }
+
+  .shopAllBtns {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .link {
+    border: 1px solid white;
+    color: white;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 1000px;
+    width: 125px;
+    text-align: center;
+  }
+
+  .link:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    transform: translateY(-3px);
   }
 
   .slick-dots li button:before {
@@ -244,6 +292,19 @@ h1 {
         width: 60%;
       }
 
+    }
+
+    .shopAll {
+      background-image: url("../images/group3.jpeg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-x: center;
+    }
+
+    .shopAllBtns {
+      display: flex;
+      flex-direction: column;
     }
 
   }

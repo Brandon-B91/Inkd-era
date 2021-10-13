@@ -5,7 +5,7 @@ import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 
 const BestSellers = () => (
   <div>
-    <h1>Check out our best sellers!</h1>
+    <h2>Check out our best sellers!</h2>
     <StaticQuery
       query={bestSellerQuery}
       render={(data) => (
@@ -28,7 +28,6 @@ const BestSellers = () => (
                     </CardTitle>
                   </Link>
                   <CardSubtitle>{node.frontmatter.description}</CardSubtitle>
-                  {/* <CardSubtitle>{node.excerpt}</CardSubtitle>   */}
                   <CardSubtitle className="float-left mt-5">
                     Price: ${node.frontmatter.price}
                   </CardSubtitle>

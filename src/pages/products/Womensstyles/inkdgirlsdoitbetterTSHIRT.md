@@ -9,7 +9,7 @@ weight: 150
 customField:
     name: Size
     values: "Small|Medium|Large"
-tag: "NEW"
+tag: "BEST SELLER"
 gender: "female"
 line: "summer"
 ---

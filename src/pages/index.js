@@ -1,12 +1,9 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { graphql, Link } from "gatsby";
-import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
-import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
-import SEO from "../components/seo";
-import MenSlider from "../components/menSlider";
-import WomenSlider from "../components/womenSlider";
-import AccessorySlider from "../components/Accessories";
+import SEO from "../components/Seo";
+import BlogPost from "../components/BlogPost";
+import BestSellerSlider from "../components/BestSellerSlider";
 import "../styles/main.scss";
 
 const IndexPage = ({ data }) => {
@@ -17,45 +14,23 @@ const IndexPage = ({ data }) => {
         description={data.site.siteMetadata.description}
         image={data.site.siteMetadata.image}
       ></SEO>
-      <div>
-        <p className="mt-5 text-dark bg-light">
-          Free shipping on all orders over $60!
-        </p>
+      {/* <BlogPost></BlogPost> */}
+      <div className="shopAll mt-5">
+        <h2>Welcome to Ink'd Era</h2>
+        <h3 className="mb-5">Shop All Styles!</h3>
+        <div className="shopAllBtns">
+          <Link to="/Men" className="link">
+            Mens
+          </Link>
+          <Link to="/Women" className="link">
+            Womens
+          </Link>
+          <Link to="/Accessories" className="link">
+            Accessories
+          </Link>
+        </div>
       </div>
-      <div className="img-slide">
-        <StaticImage
-          className="mask"
-          loading="lazy"
-          src="../images/group1.jpeg"
-          alt="Group photo for inkd era 1"
-          placeholder="blurred"
-          layout="fullWidth"
-        />
-      </div>
-      <MenSlider></MenSlider>
-      <div>
-        <StaticImage
-          className="mask"
-          loading="lazy"
-          src="../images/group2.jpeg"
-          alt="Group photo for inkd era 2"
-          placeholder="blurred"
-          layout="fullWidth"
-        />
-      </div>
-      <WomenSlider></WomenSlider>
-      <div>
-        <StaticImage
-          className="mask"
-          loading="lazy"
-          src="../images/group3.jpeg"
-          alt="Group photo for inkd era 2"
-          placeholder="blurred"
-          layout="fullWidth"
-        />
-      </div>
-      <AccessorySlider></AccessorySlider>
-      {/* <SpringSummerLine></SpringSummerLine> */}
+      <BestSellerSlider></BestSellerSlider>
       <div>
         {/* {data.allMarkdownRemark.edges.map(({ node }) => {
           const image = getImage(node.frontmatter.image);
@@ -92,25 +67,15 @@ const IndexPage = ({ data }) => {
             </div>
           );
         })} */}
-        {/* <h3 className="text-light text-center mt-3 mb-2"> Want to see our full selection? </h3>
-          <Link to="/Men">
-            <h3 className="btn btn-danger text-light m-1">Mens styles</h3>
-          </Link>
-          <Link to="/Women">
-            <h3 className="btn btn-danger text-light m-1">Womens styles</h3>
-          </Link>
-          <Link to="/Accessories">
-            <h3 className="btn btn-danger text-light m-1">Accessories</h3>
-          </Link> */}
-          <Link to="/Contest">
-            <div className="contestLink d-flex flex-column justify-content-center mt-3 contestLink lazy">
-              <h2 className="text-light"> Contests</h2>
-              <h3 className="text-light">
-                Do you like free things? Who doesn't!
-              </h3>
-              <h5 className="text-light">Click here to learn more!</h5>
-            </div>
-          </Link>
+        <Link to="/Contest">
+          <div className="contestLink d-flex flex-column justify-content-center mt-5 contestLink lazy">
+            <h2 className="text-light"> Contests</h2>
+            <h3 className="text-light">
+              Do you like free things? Who doesn't!
+            </h3>
+            <h5 className="text-light">Click here to learn more!</h5>
+          </div>
+        </Link>
       </div>
     </Layout>
   );

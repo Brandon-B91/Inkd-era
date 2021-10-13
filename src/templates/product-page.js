@@ -39,25 +39,24 @@ const ProductPage = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <SEO 
-        title={post.frontmatter.title} 
+      <SEO
+        title={post.frontmatter.title}
         description={post.frontmatter.description}
         image={src}
-      >
-      </SEO>
+      ></SEO>
       <div className="full-page">
         <Row>
           <Col md="8" className="mt-4">
             <Card className="mt-4 product-card">
               <Slider {...settings}>
-                <div style={{ backgroundColor: "white"}}>
+                <div style={{ backgroundColor: "white" }}>
                   <GatsbyImage
                     className="card-image-top"
                     image={image}
                     alt={post.frontmatter.description}
                   />
                 </div>
-                <div style={{ backgroundColor: "white"}}>
+                <div style={{ backgroundColor: "white" }}>
                   <GatsbyImage
                     className="card-image-top"
                     image={imageback}
@@ -68,9 +67,7 @@ const ProductPage = ({ data, pageContext }) => {
               </Slider>
               <CardBody>
                 <CardTitle className="h1 text-light text-wrap">
-                  <h1>
-                    {post.frontmatter.title}
-                  </h1>
+                  <h1>{post.frontmatter.title}</h1>
                 </CardTitle>
                 {/* <div dangerouslySetInnerHTML={{ __html: post.html }} /> */}
                 <CardText>{post.frontmatter.description}</CardText>
@@ -123,7 +120,7 @@ const ProductPage = ({ data, pageContext }) => {
                   href={
                     "https://www.facebook.com/sharer.php?u=" +
                     baseUrl +
-                    pageContext.slug 
+                    pageContext.slug
                   }
                   className="facebook text-light"
                   target="_blank"
@@ -138,9 +135,10 @@ const ProductPage = ({ data, pageContext }) => {
                     "https://www.twitter.com/share?text=Check this out! &url=" +
                     baseUrl +
                     pageContext.slug +
-                    "&hashtags=Inkdera" 
+                    "&hashtags=Inkdera"
                   }
-                  img src={image}
+                  img
+                  src={image}
                   className="twitter text-light"
                   target="_blank"
                   rel="noopener noreferrer"

@@ -9,8 +9,11 @@ import "../styles/main.scss";
 const WomensStyles = ({ data }) => {
   return (
     <Layout>
-      <SEO title="=Womens styles" description="Mens style Inkd Era shirts and tank top"s></SEO>
-      {/* <h1>{data.site.siteMetadata.title}</h1> */}
+      <SEO
+        title="=Womens styles"
+        description="Mens style Inkd Era shirts and tank top"
+        s
+      ></SEO>
       <h1 className="text-light mt-5 mb-4">Womens Styles </h1>
       <div>
         {data.allMarkdownRemark.edges.map(({ node }) => {
@@ -50,13 +53,16 @@ const WomensStyles = ({ data }) => {
             </div>
           );
         })}
-          <Link to="/Contest">
-            <div className="contestLink d-flex flex-column justify-content-center">
-              <h1 className="text-light"> Contests</h1>
-              <h3 className="text-light"> Do you like free things? Who doesn't!</h3>
-              <h5 className="text-light">Click here to learn more!</h5>
-            </div>
-          </Link>
+        <Link to="/Contest">
+          <div className="contestLink d-flex flex-column justify-content-center">
+            <h2 className="text-light"> Contests</h2>
+            <h4 className="text-light">
+              {" "}
+              Do you like free things? Who doesn't!
+            </h4>
+            <h5 className="text-light">Click here to learn more!</h5>
+          </div>
+        </Link>
       </div>
     </Layout>
   );
@@ -69,7 +75,10 @@ export const query = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC } filter: { frontmatter: { gender: { eq: "female" }}}) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { gender: { eq: "female" } } }
+    ) {
       totalCount
       edges {
         node {

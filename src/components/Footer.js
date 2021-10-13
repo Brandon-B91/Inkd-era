@@ -53,20 +53,25 @@ const Footer = () => {
         </ul>
       </div>
       <Email className=""></Email>
-      <ul className="d-flex flex-row justify-content-center mt-3">
-        <li className="mr-5">
+      <ul className="d-flex flex-row justify-content-around p-0 mr-1 ml-">
+        <li className="mr-2">
           <Link to="/info-pages/orderProcessing" className="text-light">
             Order processing
           </Link>
         </li>
-        <li className="mr-5">
+        <li className="mr-2">
           <Link to="/info-pages/shippingPolicy" className="text-light">
             Shipping Policy
           </Link>
         </li>
-        <li className="mr-5">
+        <li className="mr-2">
           <Link to="/info-pages/returnPolicy" className="text-light">
             Return Policy
+          </Link>
+        </li>
+        <li>
+          <Link to="/Contact" className="text-light">
+            Contact us
           </Link>
         </li>
       </ul>

@@ -4,49 +4,49 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 
 const SpringSummerLine = () => (
-    <div>
-      {/* <div> */}
-        <h2 className="text-light m-3">Spring / Summer line!</h2>
-        <StaticQuery
-          query={springSummerLine}
-          render={(data) => (
-            <div className="d-inline-flex flex-row">
-              {data.allMarkdownRemark.edges.map(({ node }) => (
-                <div>
-                <Card className="m-2 index-card" key={node.id}>
+  <div>
+    {/* <div> */}
+    <h2 className="text-light m-3">Spring / Summer line!</h2>
+    <StaticQuery
+      query={springSummerLine}
+      render={(data) => (
+        <div className="d-inline-flex flex-row">
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <div>
+              <Card className="m-2 index-card" key={node.id}>
+                <Link to={node.fields.slug}>
+                  <GatsbyImage
+                    className="card-img-top"
+                    image={getImage(node.frontmatter.image)}
+                    alt={node.frontmatter.description}
+                  />
+                </Link>
+                <hr />
+                <CardBody>
                   <Link to={node.fields.slug}>
-                    <GatsbyImage
-                      className="card-img-top"
-                      image={getImage(node.frontmatter.image)}
-                      alt={node.frontmatter.description}
-                    />
+                    <CardTitle className="h4 text-light text-wrap">
+                      {node.frontmatter.title}
+                    </CardTitle>
                   </Link>
-                  <hr />
-                  <CardBody>
-                    <Link to={node.fields.slug}>
-                      <CardTitle className="h4 text-light text-wrap">
-                        {node.frontmatter.title}
-                      </CardTitle>
-                    </Link>
-                    <CardSubtitle>{node.frontmatter.description}</CardSubtitle>
-                    {/* <CardSubtitle>{node.excerpt}</CardSubtitle>   */}
-                    <CardSubtitle className="float-left mt-5">
-                      Price: ${node.frontmatter.price}
-                    </CardSubtitle>
-                    <CardSubtitle>
-                      <Badge color="danger float-right mt-5">
-                        {node.frontmatter.tag}
-                      </Badge>
-                    </CardSubtitle>
-                  </CardBody>
-                </Card>
-                </div>
-              ))}
+                  <CardSubtitle>{node.frontmatter.description}</CardSubtitle>
+                  {/* <CardSubtitle>{node.excerpt}</CardSubtitle>   */}
+                  <CardSubtitle className="float-left mt-5">
+                    Price: ${node.frontmatter.price}
+                  </CardSubtitle>
+                  <CardSubtitle>
+                    <Badge color="danger float-right mt-5">
+                      {node.frontmatter.tag}
+                    </Badge>
+                  </CardSubtitle>
+                </CardBody>
+              </Card>
             </div>
-          )}
-        />
-      {/* </div> */}
-    </div>
+          ))}
+        </div>
+      )}
+    />
+    {/* </div> */}
+  </div>
 );
 
 const springSummerLine = graphql`

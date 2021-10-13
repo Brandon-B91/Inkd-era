@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Ink'd Era`,
     titleTemplate: `%s - Inkd era clothing`,
-    description: `Clothing and brand built for tattoos and tattoed culture including pierced and alternative styles!`,
+    description: ` Premium clothing brand built around tattoos and tattoed culture including pierced and alternative styles!`,
     url: "https://inkdera.com",
     siteUrl: "https://inkdera.com",
     image: "/src/images/inkdEralogo.jpeg",
@@ -14,7 +14,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-netlify`,
     `gatsby-plugin-advanced-sitemap`,
     `gatsby-plugin-preload-fonts`,
     {
@@ -24,6 +23,12 @@ module.exports = {
         sitemap: 'https://www.inkdera.com/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://www.inkdera.com`,
+      },
     },
     {
       resolve: "gatsby-plugin-manifest",

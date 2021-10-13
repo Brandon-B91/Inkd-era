@@ -1,21 +1,23 @@
 import React from "react";
 import Layout from "../components/Layout";
-import SEO from "../components/seo"
-
+import SEO from "../components/seo";
 
 const Contact = () => {
   return (
     <div>
       <Layout>
-      <SEO title="Inkd era Contact" description="Contact page for Ink'd Era"></SEO>
+        <SEO
+          title="Inkd era Contact"
+          description="Contact page for Ink'd Era"
+        ></SEO>
         <div className="full-page text-light">
           <h1>Want to get in touch with us?</h1>
           <h2>Heres how!</h2>
           <p>
-            Of course you can always reach out to us on social media or thruough our
-            E-mail address. We would love to hear from you for general feedback,
-            suggestion, concerns or even to comment on something of course for
-            order status as well!
+            Of course you can always reach out to us on social media or thruough
+            our E-mail address. We would love to hear from you for general
+            feedback, suggestion, concerns or even to comment on something of
+            course for order status as well!
           </p>
           <ul className="contact-ul text-center mt-4">
             <li>

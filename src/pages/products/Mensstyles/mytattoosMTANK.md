@@ -3,7 +3,7 @@ title: "My Tattoos Dont Like You Either Tank Top"
 date: 2021-3-05 08:46:00
 image: '../../../images/mens tanks/mytattoosMTANK.png'
 # image2: '../../../images/mens tanks/menstankback.png'
-description: "Remember that time that one person in the store told you this? Well now you can let them know how your tattoos feel about it!"
+description: "Let the world know how your tattoos feel about them as well"
 price: 20
 weight: 150
 customField:

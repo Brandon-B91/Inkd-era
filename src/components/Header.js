@@ -29,28 +29,27 @@ const Header = (props) => {
             <Nav className="ml-auto" navbar>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
-                  Store
+                  Shop
                 </DropdownToggle>
                 <DropdownMenu right className="bg-dark">
                   <DropdownItem className="bg-dark">
                     <NavItem>
-                      <NavLink href="/Men">
-                        Men
-                      </NavLink>
+                      <NavLink href="/Men">Men</NavLink>
                     </NavItem>
                   </DropdownItem>
                   <DropdownItem className="bg-dark">
                     <NavItem>
-                      <NavLink href="/Women">
-                        Women
-                      </NavLink>
+                      <NavLink href="/Women">Women</NavLink>
                     </NavItem>
                   </DropdownItem>
                   <DropdownItem className="bg-dark">
                     <NavItem>
-                      <NavLink href="/Accessories">
-                        Accessories
-                      </NavLink>
+                      <NavLink href="/Accessories">Accessories</NavLink>
+                    </NavItem>
+                  </DropdownItem>
+                  <DropdownItem className="bg-dark">
+                    <NavItem>
+                      <NavLink href="/BestSellersPage">Best Sellers</NavLink>
                     </NavItem>
                   </DropdownItem>
                 </DropdownMenu>
@@ -59,12 +58,18 @@ const Header = (props) => {
                 <NavLink href="/Contest">Contests</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/Contact">Contact</NavLink>
+                <NavLink href="/Blogs">Blog</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
         </div>
-        <button className="snipcart-checkout" style={{border: "none", background: "none", color: "#fafafa"}}><i class="fas fa-shopping-cart" style={{color: "white"}}></i><span className="snipcart-total-price ml-1"></span></button>
+        <button
+          className="snipcart-checkout"
+          style={{ border: "none", background: "none", color: "#fafafa" }}
+        >
+          <i class="fas fa-shopping-cart" style={{ color: "white" }}></i>
+          <span className="snipcart-total-price ml-1"></span>
+        </button>
       </Navbar>
     </div>
   );

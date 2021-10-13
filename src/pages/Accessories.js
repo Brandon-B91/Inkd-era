@@ -3,13 +3,16 @@ import Layout from "../components/Layout";
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
-import SEO from "../components/seo"
+import SEO from "../components/seo";
 import "../styles/main.scss";
 
 const Accessories = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Inkd Era accessories" description="stickers, car decals, and mystery packs all exclusive to Inkd Era"></SEO>
+      <SEO
+        title="Inkd Era accessories"
+        description="stickers, car decals, and mystery packs all exclusive to Inkd Era"
+      ></SEO>
       {/* <h1>{data.site.siteMetadata.title}</h1> */}
       <h1 className="text-light mt-5 mb-4">Accessories</h1>
       <div>
@@ -50,13 +53,16 @@ const Accessories = ({ data }) => {
             </div>
           );
         })}
-          <Link to="/Contest">
-            <div className="contestLink d-flex flex-column justify-content-center">
-              <h2 className="text-light"> Contests</h2>
-              <h3 className="text-light"> Do you like free things? Who doesn't!</h3>
-              <h5 className="text-light">Click here to learn more!</h5>
-            </div>
-          </Link>
+        <Link to="/Contest">
+          <div className="contestLink d-flex flex-column justify-content-center">
+            <h2 className="text-light"> Contests</h2>
+            <h3 className="text-light">
+              {" "}
+              Do you like free things? Who doesn't!
+            </h3>
+            <h5 className="text-light">Click here to learn more!</h5>
+          </div>
+        </Link>
       </div>
     </Layout>
   );
@@ -69,8 +75,10 @@ export const query = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC } 
-      filter: { frontmatter: { gender: { eq: "accessory" }}}) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { gender: { eq: "accessory" } } }
+    ) {
       totalCount
       edges {
         node {

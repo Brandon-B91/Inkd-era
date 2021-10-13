@@ -11,7 +11,7 @@ customField:
     values: "Small|Medium|Large|X-Large"
     gender: Let us know your fit preference.
     list: "Male|Female"
-tag: "MYSTERY"
+tag: "BEST SELLER"
 gender: "accessory"
 display: "Y"
 ---
