@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import SEO from "../../components/seo";
 
-const shippingPolicy = ([data]) => {
+const shippingPolicy = ({ data }) => {
   return (
     <div>
       <Layout>
