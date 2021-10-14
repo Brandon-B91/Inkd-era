@@ -25,12 +25,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-canonical-urls`,
-      options: {
-        siteUrl: `https://www.inkdera.com`,
-      },
-    },
-    {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: `Ink'd Era`,
