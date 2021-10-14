@@ -27,6 +27,7 @@ const ProductPage = ({ data, pageContext }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description}
         image={src}
+        pathname={this.props.location.pathname}
       ></SEO>
       <div className="full-page mt-3">
         <Row>
@@ -161,7 +162,7 @@ export const blogQuery = graphql`
           }
         }
       }
-      excerpt
+      excerpt(pruneLength: 160)
     }
   }
 `;

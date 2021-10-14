@@ -12,7 +12,7 @@ const WomensStyles = ({ data }) => {
       <SEO
         title="=Womens styles"
         description="Mens style Inkd Era shirts and tank top"
-        s
+        pathname={this.props.location.pathname}
       ></SEO>
       <h1 className="text-light mt-5 mb-4">Womens Styles </h1>
       <div>

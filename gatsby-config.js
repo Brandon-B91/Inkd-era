@@ -7,6 +7,7 @@ module.exports = {
     siteUrl: "https://inkdera.com",
     image: "/src/images/inkdEralogo.jpeg",
     twitterUsername: "@InkdEra",
+    keywords: "Inkd era, ink, tattoo, tattoo apparel, tattoo clothes, tattoo designs, tattoo culture, alternative styles."
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -14,7 +15,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-advanced-sitemap`,
     `gatsby-plugin-preload-fonts`,
     {
       resolve: 'gatsby-plugin-robots-txt',
