@@ -7,7 +7,6 @@ import BestSellerSlider from "../components/BestSellerSlider";
 import "../styles/main.scss";
 
 const IndexPage = ({ data, location }) => {
-  const currentPath = window.location.pathname
   
   return (
     <Layout>
@@ -15,7 +14,7 @@ const IndexPage = ({ data, location }) => {
         title={data.site.siteMetadata.title}
         description={data.site.siteMetadata.description}
         image={data.site.siteMetadata.image}
-        pathname={currentPath}
+        pathname={location.pathname}
       ></SEO>
       console.log(pathname)
       {/* <BlogPost></BlogPost> */}

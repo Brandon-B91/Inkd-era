@@ -19,7 +19,7 @@ import {
 import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
 import "../styles/main.scss";
 
-const ProductPage = ({ data, pageContext }) => {
+const ProductPage = ({ data, pageContext, location }) => {
   const baseUrl = "https://Inkdera.com";
   const post = data.markdownRemark;
   const image = getImage(post.frontmatter.image);
@@ -37,7 +37,6 @@ const ProductPage = ({ data, pageContext }) => {
     slidesToScroll: 1,
   };
 
-  const currentPath = window.location.pathname
 
 
   return (
@@ -46,7 +45,7 @@ const ProductPage = ({ data, pageContext }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description}
         image={src}
-        pathname={currentPath}
+        pathname={location.pathname}
       ></SEO>
       <div className="full-page">
         <Row>
