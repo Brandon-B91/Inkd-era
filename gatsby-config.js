@@ -3,8 +3,8 @@ module.exports = {
     title: `Ink'd Era`,
     titleTemplate: `%s - Inkd era clothing`,
     description: ` Premium clothing brand built around tattoos and tattoed culture including pierced and alternative styles!`,
-    url: "https://inkdera.com",
-    siteUrl: "https://inkdera.com",
+    url: "https://www.inkdera.com",
+    siteUrl: "https://www.inkdera.com",
     image: "/src/images/inkdEralogo.jpeg",
     twitterUsername: "@InkdEra",
     keywords: ["Inkd era, ink, tattoo, tattoo apparel, tattoo clothes, tattoo designs, tattoo culture, alternative styles."]
