@@ -15,7 +15,7 @@ import {
 import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
 import "../styles/main.scss";
 
-const ProductPage = ({ data, pageContext }) => {
+const ProductPage = ({ data, pageContext, location }) => {
   const baseUrl = "https://Inkdera.com";
   const post = data.markdownRemark;
   const image = getImage(post.frontmatter.image);
