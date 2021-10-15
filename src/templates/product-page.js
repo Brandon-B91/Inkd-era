@@ -37,13 +37,16 @@ const ProductPage = ({ data, pageContext }) => {
     slidesToScroll: 1,
   };
 
+  const currentPath = window.location.pathname
+
+
   return (
     <Layout>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
         image={src}
-        pathname={this.props.location.pathname}
+        pathname={currentPath}
       ></SEO>
       <div className="full-page">
         <Row>
@@ -81,9 +84,6 @@ const ProductPage = ({ data, pageContext }) => {
                     {post.frontmatter.tag}
                   </Badge>
                 </CardSubtitle>
-                {/* <Button className="btn btn-danger float-right btn-lg btn-block">
-                  Buy
-                </Button> */}
               </CardBody>
               <button
                 style={{ width: "80%", margin: "0 auto" }}

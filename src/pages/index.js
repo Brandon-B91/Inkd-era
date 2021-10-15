@@ -6,15 +6,18 @@ import BlogPost from "../components/BlogPost";
 import BestSellerSlider from "../components/BestSellerSlider";
 import "../styles/main.scss";
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ data, location }) => {
+  const currentPath = window.location.pathname
+  
   return (
     <Layout>
       <SEO
         title={data.site.siteMetadata.title}
         description={data.site.siteMetadata.description}
         image={data.site.siteMetadata.image}
-        pathname={this.props.location.pathname}
+        pathname={currentPath}
       ></SEO>
+      console.log(pathname)
       {/* <BlogPost></BlogPost> */}
       <div className="shopAll mt-5">
         <h1>Welcome to Ink'd Era</h1>

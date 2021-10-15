@@ -101,6 +101,8 @@ function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
       ? `${site.siteMetadata.siteUrl}${metaImage.src}`
       : null
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
+  const keywords= keywords || site.siteMetadata.keywords // here you get your props or your metadata
+
 
   return (
     <Helmet

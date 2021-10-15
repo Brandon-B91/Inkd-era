@@ -7,7 +7,7 @@ module.exports = {
     siteUrl: "https://inkdera.com",
     image: "/src/images/inkdEralogo.jpeg",
     twitterUsername: "@InkdEra",
-    keywords: "Inkd era, ink, tattoo, tattoo apparel, tattoo clothes, tattoo designs, tattoo culture, alternative styles."
+    keywords: ["Inkd era, ink, tattoo, tattoo apparel, tattoo clothes, tattoo designs, tattoo culture, alternative styles."]
   },
   plugins: [
     `gatsby-plugin-sass`,
