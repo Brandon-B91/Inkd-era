@@ -2,13 +2,14 @@ import React from "react";
 import Layout from "../components/Layout";
 import SEO from "../components/seo";
 
-const Contest = () => {
+const Contest = ({ location }) => {
   return (
     <div>
       <Layout>
         <SEO
           title="Inkd era Contest"
           description="contest page for Ink'd Era"
+          pathname={location.pathname}
         ></SEO>
         <div className="full-page">
           <div className="contest-page text-light">

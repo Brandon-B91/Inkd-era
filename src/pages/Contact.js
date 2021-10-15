@@ -2,13 +2,14 @@ import React from "react";
 import Layout from "../components/Layout";
 import SEO from "../components/seo";
 
-const Contact = () => {
+const Contact = ({ location }) => {
   return (
     <div>
       <Layout>
         <SEO
           title="Inkd era Contact"
           description="Contact page for Ink'd Era"
+          pathname={location.pathname}
         ></SEO>
         <div className="full-page text-light">
           <h1>Want to get in touch with us?</h1>

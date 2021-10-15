@@ -6,12 +6,13 @@ import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 import SEO from "../components/seo";
 import "../styles/main.scss";
 
-const Accessories = ({ data }) => {
+const Accessories = ({ data, location }) => {
   return (
     <Layout>
       <SEO
         title="Inkd Era accessories"
         description="stickers, car decals, and mystery packs all exclusive to Inkd Era"
+        pathname={location.pathname}
       ></SEO>
       {/* <h1>{data.site.siteMetadata.title}</h1> */}
       <h1 className="text-light mt-5 mb-4">Accessories</h1>

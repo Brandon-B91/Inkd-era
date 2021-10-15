@@ -6,12 +6,13 @@ import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 import SEO from "../components/seo";
 import "../styles/main.scss";
 
-const Blog = ({ data }) => {
+const Blog = ({ data, location }) => {
   return (
     <Layout>
       <SEO
         title="Blog posts"
         description="Blog posts related to tattoos, tattooing, tattoo shops, getting tattoos, tattoo artists."
+        pathname={location.pathname}
       ></SEO>
       <div className="">
         <h1 className="text-light mt-5">Blogs</h1>
