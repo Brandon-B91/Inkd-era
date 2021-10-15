@@ -14,7 +14,7 @@ const Blog = ({ data }) => {
         description="Blog posts related to tattoos, tattooing, tattoo shops, getting tattoos, tattoo artists."
       ></SEO>
       <div className="">
-        <h2 className="text-light mt-5">Blogs</h2>
+        <h1 className="text-light mt-5">Blogs</h1>
         <StaticQuery
           query={BlogPosts}
           render={(data) => (

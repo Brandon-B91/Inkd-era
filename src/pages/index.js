@@ -13,10 +13,11 @@ const IndexPage = ({ data }) => {
         title={data.site.siteMetadata.title}
         description={data.site.siteMetadata.description}
         image={data.site.siteMetadata.image}
+        pathname={this.props.location.pathname}
       ></SEO>
       {/* <BlogPost></BlogPost> */}
       <div className="shopAll mt-5">
-        <h2>Welcome to Ink'd Era</h2>
+        <h1>Welcome to Ink'd Era</h1>
         <h3 className="mb-5">Shop All Styles!</h3>
         <div className="shopAllBtns">
           <Link to="/Men" className="link">
