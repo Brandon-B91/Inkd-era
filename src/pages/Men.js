@@ -6,13 +6,13 @@ import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 import SEO from "../components/seo";
 import "../styles/main.scss";
 
-const MensStyles = ({ data }) => {
+const MensStyles = ({ data, location }) => {
   return (
     <Layout>
       <SEO
         title="Mens Styles"
         description="Mens style Inkd Era shirts and tank tops"
-        pathname={this.props.location.pathname}
+        pathname={location.pathname}
       ></SEO>
       <h1 className="text-light mt-5 mb-4">Mens Styles </h1>
       <div>
