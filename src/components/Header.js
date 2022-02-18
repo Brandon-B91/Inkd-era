@@ -44,7 +44,7 @@ const Header = (props) => {
                   </DropdownItem>
                   <DropdownItem className="bg-dark">
                     <NavItem>
-                      <NavLink href="/Accessories">Accessories</NavLink>
+                      <NavLink href="/accessories">Accessories</NavLink>
                     </NavItem>
                   </DropdownItem>
                   <DropdownItem className="bg-dark">

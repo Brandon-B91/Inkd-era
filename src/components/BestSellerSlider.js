@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, StaticQuery, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
+import { Badge, Card, CardBody, CardTitle, CardSubtitle, CardFooter } from "reactstrap";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -16,7 +16,7 @@ const settings = {
   dots: true,
   infinite: true,
   speed: 800,
-  slidesToShow: 4,
+  slidesToShow: 3,
   slidesToScroll: 1,
   swipeToSlide: true,
   easing: "linear",
@@ -25,7 +25,7 @@ const settings = {
     {
       breakpoint: 824,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         initialSlide: 1,
       },
@@ -51,14 +51,14 @@ const settings = {
 const BestSeller = () => (
   <div className="sliderSlide">
 
-    <h2 className="text-light m-3">Best Sellers</h2>
+    <h2 className="text-light m-1">Best Sellers</h2>
     <StaticQuery
       query={BestSellerSlider}
       render={(data) => (
         <Slider {...settings}>
           {data.allMarkdownRemark.edges.map(({ node }, i) => (
             <div key={i}>
-              <Card className="m-2 index-card" key={node.id}>
+              <Card className="m-1 index-card" key={node.id}>
                 <Link to={node.fields.slug}>
                   <GatsbyImage
                     className="card-img-top"
@@ -70,20 +70,22 @@ const BestSeller = () => (
                 <hr />
                 <CardBody>
                   <Link to={node.fields.slug}>
-                    <CardTitle className="h4 text-light text-wrap">
+                    <CardTitle className="h5 text-light text-wrap">
                       {node.frontmatter.title}
                     </CardTitle>
                   </Link>
                   <CardSubtitle>{node.frontmatter.description}</CardSubtitle>
-                  <CardSubtitle className="float-left mt-5">
+                </CardBody>
+                <CardFooter>
+                <CardSubtitle className="float-left d-inline price">
                     Price: ${node.frontmatter.price}
                   </CardSubtitle>
                   <CardSubtitle>
-                    <Badge color="danger float-right mt-5">
+                    <Badge color="danger float-right d-inline badge">
                       {node.frontmatter.tag}
                     </Badge>
-                  </CardSubtitle>
-                </CardBody>
+                    </CardSubtitle>
+                </CardFooter>
               </Card>
             </div>
           ))}
