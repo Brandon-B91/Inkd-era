@@ -103,6 +103,7 @@ h1 {
 
    .index-card {
     width: 250px;
+    height: 500px;
    }
 
    .wide-card {
@@ -113,7 +114,6 @@ h1 {
     border: none;
     background: #000;
     color: #fafafa;
-    height: 500px;
 
     &.index-card:hover {
       opacity: 0.9;

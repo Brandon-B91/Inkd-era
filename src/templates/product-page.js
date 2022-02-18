@@ -10,6 +10,7 @@ import {
   Badge,
   Card,
   CardBody,
+  CardFooter,
   CardText,
   CardTitle,
   Col,
@@ -27,8 +28,8 @@ const ProductPage = ({ data, pageContext, location }) => {
   const src = getSrc(post.frontmatter.image);
 
   const settings = {
-    autoplay: false,
-    autoplaySpeed: 2500,
+    // autoplay: false,
+    // autoplaySpeed: 2500,
     arrows: true,
     dots: true,
     infinite: true,
@@ -36,8 +37,6 @@ const ProductPage = ({ data, pageContext, location }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
-
-
 
   return (
     <Layout>
@@ -50,18 +49,18 @@ const ProductPage = ({ data, pageContext, location }) => {
       <div className="full-page">
         <Row>
           <Col md="8" className="mt-4">
-            <Card className="mt-4 product-card">
+            <Card className="product-card">
               <Slider {...settings}>
                 <div style={{ backgroundColor: "white" }}>
                   <GatsbyImage
-                    className="card-image-top"
+                    className="card-img-top"
                     image={image}
                     alt={post.frontmatter.description}
                   />
                 </div>
                 <div style={{ backgroundColor: "white" }}>
                   <GatsbyImage
-                    className="card-image-top"
+                    className="card-img-top"
                     image={imageback}
                     alt={post.frontmatter.description}
                     loading="lazy"
@@ -84,27 +83,31 @@ const ProductPage = ({ data, pageContext, location }) => {
                   </Badge>
                 </CardSubtitle>
               </CardBody>
-              <button
-                style={{ width: "80%", margin: "0 auto" }}
-                className="btn btn-danger snipcart-add-item mb-3"
-                // id={data.node.id}
-                data-item-id={post.frontmatter.title}
-                data-item-price={post.frontmatter.price}
-                data-item-url={"https://Inkdera.com/" + post.fields.slug}
-                data-item-description={post.frontmatter.description}
-                data-item-image={src}
-                data-item-name={post.frontmatter.title}
-                data-item-weight={post.frontmatter.weight}
-                data-item-custom1-name={post.frontmatter.customField.name}
-                data-item-custom1-options={post.frontmatter.customField.values}
-                data-item-custom2-name={post.frontmatter.customField.gender}
-                data-item-custom2-options={post.frontmatter.customField.list}
-              >
-                Add to cart!
-              </button>
-              <CardSubtitle className="text-center font-weight-light small mb-3">
-                **Please allow 1-3 days for processing**
-              </CardSubtitle>
+              <CardFooter>
+                <button
+                  style={{ width: "80%", margin: "0 auto" }}
+                  className="btn btn-danger snipcart-add-item mb-3"
+                  // id={data.node.id}
+                  data-item-id={post.frontmatter.title}
+                  data-item-price={post.frontmatter.price}
+                  data-item-url={"https://Inkdera.com/" + post.fields.slug}
+                  data-item-description={post.frontmatter.description}
+                  data-item-image={src}
+                  data-item-name={post.frontmatter.title}
+                  data-item-weight={post.frontmatter.weight}
+                  data-item-custom1-name={post.frontmatter.customField.name}
+                  data-item-custom1-options={
+                    post.frontmatter.customField.values
+                  }
+                  data-item-custom2-name={post.frontmatter.customField.gender}
+                  data-item-custom2-options={post.frontmatter.customField.list}
+                >
+                  Add to cart!
+                </button>
+                <CardSubtitle className="text-center font-weight-light small mb-3">
+                  **Please allow 1-3 days for processing**
+                </CardSubtitle>
+              </CardFooter>
             </Card>
             <div
               style={{ color: "#fafafa" }}
