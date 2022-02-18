@@ -10,7 +10,7 @@ const WomensStyles = ({ data, location }) => {
   return (
     <Layout>
       <SEO
-        title="=Womens styles"
+        title="Womens styles"
         description="Mens style Inkd Era shirts and tank top"
         pathname={location.pathname}
       ></SEO>

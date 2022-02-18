@@ -17,7 +17,7 @@ const Accessories = ({ data, location }) => {
   return (
     <Layout>
       <SEO
-        title="Inkd Era accessories"
+        title="Accessories"
         description="stickers, car decals, and mystery packs all exclusive to Inkd Era"
         pathname={location.pathname}
       ></SEO>
