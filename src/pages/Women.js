@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
+import { Badge, Card, CardBody, CardFooter, CardTitle, CardSubtitle } from "reactstrap";
 import SEO from "../components/seo";
 import "../styles/main.scss";
 
@@ -39,15 +39,25 @@ const WomensStyles = ({ data, location }) => {
                     </Link>
                     <CardSubtitle>{node.frontmatter.description}</CardSubtitle>
                     {/* <CardSubtitle>{node.excerpt}</CardSubtitle>   */}
-                    <CardSubtitle className="float-left mt-5">
+                    {/* <CardSubtitle className="float-left mt-5">
                       Price: ${node.frontmatter.price}
                     </CardSubtitle>
                     <CardSubtitle>
                       <Badge color="danger float-right mt-5">
                         {node.frontmatter.tag}
                       </Badge>
+                    </CardSubtitle> */}
+                  </CardBody>{" "}
+                  <CardFooter>
+                    <CardSubtitle className="float-left d-inline price">
+                      Price: ${node.frontmatter.price}
                     </CardSubtitle>
-                  </CardBody>
+                    <CardSubtitle>
+                      <Badge color="danger float-right d-inline badge">
+                        {node.frontmatter.tag}
+                      </Badge>
+                    </CardSubtitle>
+                  </CardFooter>
                 </Card>
               </div>
             </div>

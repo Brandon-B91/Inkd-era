@@ -22,13 +22,13 @@ const IndexPage = ({ data, location }) => {
         <h1>Welcome to Ink'd Era</h1>
         <h3 className="mb-5">Shop All Styles!</h3>
         <div className="shopAllBtns">
-          <Link to="/Men" className="link">
+          <Link to="/men" className="link">
             Mens
           </Link>
-          <Link to="/Women" className="link">
+          <Link to="/women" className="link">
             Womens
           </Link>
-          <Link to="/Accessories" className="link">
+          <Link to="/accessories" className="link">
             Accessories
           </Link>
         </div>
