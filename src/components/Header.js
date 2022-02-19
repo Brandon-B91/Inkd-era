@@ -34,12 +34,12 @@ const Header = (props) => {
                 <DropdownMenu right className="bg-dark">
                   <DropdownItem className="bg-dark">
                     <NavItem>
-                      <NavLink href="/Men">Men</NavLink>
+                      <NavLink href="/men">Men</NavLink>
                     </NavItem>
                   </DropdownItem>
                   <DropdownItem className="bg-dark">
                     <NavItem>
-                      <NavLink href="/Women">Women</NavLink>
+                      <NavLink href="/women">Women</NavLink>
                     </NavItem>
                   </DropdownItem>
                   <DropdownItem className="bg-dark">
@@ -49,7 +49,7 @@ const Header = (props) => {
                   </DropdownItem>
                   <DropdownItem className="bg-dark">
                     <NavItem>
-                      <NavLink href="/BestSellersPage">Best Sellers</NavLink>
+                      <NavLink href="/bestSellersPage">Best Sellers</NavLink>
                     </NavItem>
                   </DropdownItem>
                 </DropdownMenu>
