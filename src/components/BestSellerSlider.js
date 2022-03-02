@@ -1,13 +1,19 @@
 import React from "react";
 import { graphql, StaticQuery, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { Badge, Card, CardBody, CardTitle, CardSubtitle, CardFooter } from "reactstrap";
+import {
+  Badge,
+  Card,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  CardFooter,
+} from "reactstrap";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const settings = {
-
   autoplay: true,
   autoplaySpeed: 5000,
   arrows: true,
@@ -16,7 +22,7 @@ const settings = {
   dots: true,
   infinite: true,
   speed: 800,
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 1,
   swipeToSlide: true,
   easing: "linear",
@@ -50,8 +56,7 @@ const settings = {
 
 const BestSeller = () => (
   <div className="sliderSlide">
-
-    <h2 className="text-light m-1">Best Sellers</h2>
+    <h2 className="text-light m-3 ">Best Sellers</h2>
     <StaticQuery
       query={BestSellerSlider}
       render={(data) => (
@@ -77,14 +82,14 @@ const BestSeller = () => (
                   <CardSubtitle>{node.frontmatter.description}</CardSubtitle>
                 </CardBody>
                 <CardFooter>
-                <CardSubtitle className="float-left d-inline price">
+                  <CardSubtitle className="float-left d-inline price">
                     Price: ${node.frontmatter.price}
                   </CardSubtitle>
                   <CardSubtitle>
                     <Badge color="danger float-right d-inline badge">
                       {node.frontmatter.tag}
                     </Badge>
-                    </CardSubtitle>
+                  </CardSubtitle>
                 </CardFooter>
               </Card>
             </div>

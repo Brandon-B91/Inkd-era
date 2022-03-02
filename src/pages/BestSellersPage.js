@@ -2,7 +2,14 @@ import React from "react";
 import Layout from "../components/Layout";
 import { graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
+import {
+  Badge,
+  Card,
+  CardBody,
+  CardFooter,
+  CardTitle,
+  CardSubtitle,
+} from "reactstrap";
 import SEO from "../components/seo";
 import "../styles/main.scss";
 
@@ -30,7 +37,7 @@ const BestSellersPage = ({ data, location }) => {
                       loading="lazy"
                     />
                   </Link>
-                  <hr />
+                  {/* <hr /> */}
                   <CardBody>
                     <Link to={node.fields.slug}>
                       <CardTitle className="h4 text-light text-wrap">
@@ -38,7 +45,8 @@ const BestSellersPage = ({ data, location }) => {
                       </CardTitle>
                     </Link>
                     <CardSubtitle>{node.frontmatter.description}</CardSubtitle>
-                    {/* <CardSubtitle>{node.excerpt}</CardSubtitle>   */}
+                  </CardBody>
+                  <CardFooter>
                     <CardSubtitle className="float-left mt-5">
                       Price: ${node.frontmatter.price}
                     </CardSubtitle>
@@ -47,7 +55,7 @@ const BestSellersPage = ({ data, location }) => {
                         {node.frontmatter.tag}
                       </Badge>
                     </CardSubtitle>
-                  </CardBody>
+                  </CardFooter>
                 </Card>
               </div>
             </div>

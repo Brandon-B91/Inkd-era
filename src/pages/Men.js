@@ -45,15 +45,6 @@ const MensStyles = ({ data, location }) => {
                       </CardTitle>
                     </Link>
                     <CardSubtitle>{node.frontmatter.description}</CardSubtitle>
-                    {/* <CardSubtitle>{node.excerpt}</CardSubtitle>   */}
-                    {/* <CardSubtitle className="float-left mt-5">
-                      Price: ${node.frontmatter.price}
-                    </CardSubtitle>
-                    <CardSubtitle>
-                      <Badge color="danger float-right mt-5">
-                        {node.frontmatter.tag}
-                      </Badge>
-                    </CardSubtitle> */}
                   </CardBody>
                   <CardFooter>
                     <CardSubtitle className="float-left d-inline price">

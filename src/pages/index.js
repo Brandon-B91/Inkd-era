@@ -16,7 +16,6 @@ const IndexPage = ({ data, location }) => {
         image={data.site.siteMetadata.image}
         pathname={location.pathname}
       ></SEO>
-      console.log(pathname)
       {/* <BlogPost></BlogPost> */}
       <div className="shopAll mt-5">
         <h1>Welcome to Ink'd Era</h1>
