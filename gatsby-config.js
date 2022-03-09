@@ -5,7 +5,7 @@ module.exports = {
     description: ` Premium clothing brand built around tattoos and tattoed culture including pierced and alternative styles!`,
     url: "https://www.inkdera.com",
     siteUrl: "https://www.inkdera.com",
-    image: "/src/images/inkdEralogo.jpeg",
+    image: "/src/images/inkdEraLogoWhite.png",
     twitterUsername: "@InkdEra",
     keywords: ["Inkd era, ink, tattoo, tattoo apparel, tattoo clothes, tattoo designs, tattoo culture, alternative styles."]
   },

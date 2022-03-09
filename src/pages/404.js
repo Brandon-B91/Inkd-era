@@ -31,21 +31,15 @@ const NotFoundPage = () => {
       <title>Not found</title>
       <h1 style={headingStyles}>Page not found</h1>
       <p style={paragraphStyles}>
-        Sorry{" "}
+        Sorry,{" "}
         <span role="img" aria-label="Pensive emoji">
           😔
         </span>{" "}
-        We couldn’t find what you were looking for.
+         something went wrong.
         <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
         <br />
-        <Link to="/">Go home</Link>.
+        Please click here to
+        <Link to="/"> Go home</Link>.
       </p>
     </main>
   );

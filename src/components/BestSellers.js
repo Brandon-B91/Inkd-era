@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, StaticQuery, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { Badge, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
+import { Badge, Card, CardBody, CardTitle, CardSubtitle, Row } from "reactstrap";
 
 const BestSellers = () => (
   <div>
@@ -10,6 +10,7 @@ const BestSellers = () => (
       query={bestSellerQuery}
       render={(data) => (
         <div>
+          <Row className=" d-flex justify-content-center">
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <div className="bestSellers">
               <Card className="m-4 index-card" key={node.id}>
@@ -40,6 +41,7 @@ const BestSellers = () => (
               </Card>
             </div>
           ))}
+          </Row>
         </div>
       )}
     />
