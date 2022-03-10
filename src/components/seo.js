@@ -32,7 +32,7 @@ function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
         lang,
       }}
       title={title}
-      titleTemplate={` Ink'd Era | Tattoo Apparel`}
+      titleTemplate={` Ink'd Era | Tattoo Apparel & Accessories`}
       link={
         canonical
           ? [
