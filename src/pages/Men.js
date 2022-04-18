@@ -28,7 +28,7 @@ const MensStyles = ({ data, location }) => {
           return (
             <div className="d-inline-flex">
               <div className="flex-row">
-                <Card className="m-2 index-card">
+                <Card className="m-2 card">
                   <Link to={node.fields.slug}>
                     <GatsbyImage
                       className="card-img-top"
