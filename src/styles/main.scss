@@ -1,5 +1,5 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import 'https://fonts.googleapis.com/css2?family=Roboto&display=swap';
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 
 *:focus {
   outline: none;
@@ -24,12 +24,12 @@ textarea {
 
 body {
   background-color: #333;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 ul {
   text-align: left;
-list-style-type: none;
+  list-style-type: none;
 }
 
 li {
@@ -54,266 +54,254 @@ h1 {
 
 .sliderSlide {
   width: 95%;
-   margin: 0 auto;
+  margin: 0 auto;
 }
 
 .container#content {
-    margin-top: 60px;
-    margin-bottom: 100px;
-    background: white;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  background: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #000;
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  line-height: 1;
+}
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-brand {
+  color: #fafafa;
+  &:hover {
+    color: gray;
+  }
+
+  button.navbar-toggler {
+    border: 1px solid #fafafa;
+  }
+
+  .navbar-toggler-icon {
+    padding: 3px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .bottom-nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.index-card {
+  height: 500px;
+}
+
+.wide-card {
+  width: 100%;
+}
+
+.card {
+  border: none;
+  background: #000;
+  color: #fafafa;
+
+  &.index-card:hover {
+    opacity: 0.9;
+  }
+}
+
+.shopAll {
+  background-image: url("../images/group1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.shopAll h2,
+h3 {
+  color: white;
+}
+
+.shopAllBtns {
+  display: flex;
+  flex-direction: row;
+}
+
+.link {
+  border: 1px solid white;
+  color: white;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 1000px;
+  width: 125px;
+  text-align: center;
+}
+
+.link:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.slick-dots li button:before {
+  color: white !important;
+  margin-bottom: 10px;
+}
+
+.full-page {
+  margin-top: 60px;
+  min-height: 100vh;
+}
+
+.contest-page ul {
+  list-style-type: disc;
+}
+
+.contest-page li {
+  margin-bottom: 10px;
+}
+
+.contact-ul li {
+  display: inline;
+  margin: 10px;
+}
+
+.contact-ul a {
+  color: #fafafa;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: 50%;
+  }
+
+  textarea {
+    width: 50%;
+  }
+}
+
+.bestSellers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a:hover {
+  color: gray;
+}
+
+.product-card {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.product-card-side {
+  margin: 0 auto;
+  width: 90%;
+  min-height: 50px;
+}
+.product-card-side li {
+  text-align: left;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.contestLink {
+  min-height: 300px;
+  width: 100%;
+  background: url("../images/contest.png") center center/cover no-repeat;
+}
+
+.ul-order {
+  list-style-type: disc;
+}
+
+.site-footer {
+  background: #000;
+  color: #fafafa;
+  margin-top: 20px;
+  padding: 10px;
+  min-height: 150px;
+}
+
+.footer-ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+
+  li {
+    display: inline;
+    margin: 10px;
   }
 
   a {
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: none;
-  }
-  
-  .navbar {
-    background-color: #000;
-    border-right: 1px solid rgba(0, 0, 0, 0.4);
-    border-left: 1px solid rgba(0, 0, 0, 0.4);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-    line-height: 1;
-
-  }
-  .navbar-dark .navbar-nav .nav-link,
-  .navbar-dark .navbar-brand {
     color: #fafafa;
-    &:hover {
-      color: gray;
-    }
-
-    button.navbar-toggler {
-      border: 1px solid #fafafa;
-   }
-
-   .navbar-toggler-icon {
-      padding: 3px;
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-   }
-
-   .bottom-nav {
-    display: flex;
-    justify-content: space-evenly;
-   }
-  }
-
-  .card {
-    width: 300px;
-  }
-
-   .index-card {
-    width: 225px;
-    height: 500px;
-   }
-
-   .wide-card {
-     width: 100%;
-   }
-   
-  .card {
-    border: none;
-    background: #000;
-    color: #fafafa;
-
-    &.index-card:hover {
-      opacity: 0.9;
-    }
-
-  }
-
-  .shopAll {
-    background-image: url("../images/group1.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.6);
-    background-blend-mode: darken;
-    min-height: 400px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .shopAll h2, h3 {
-    color: white;
-  }
-
-  .shopAllBtns {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .link {
-    border: 1px solid white;
-    color: white;
-    margin: 10px;
-    padding: 10px 20px;
-    border-radius: 1000px;
-    width: 125px;
-    text-align: center;
-  }
-
-  .link:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    color: white;
-    transform: translateY(-3px);
-  }
-
-  .slick-dots li button:before {
-    color: white !important;
-    margin-bottom: 10px;
-  }
-
-  .full-page {
-    margin-top: 60px;
-    min-height: 100vh;
-  }
-
-  .contest-page ul {
-    list-style-type: disc;
-  }
-
-  .contest-page li {
-    margin-bottom: 10px;
-  }
-
-  .contact-ul li {
-    display: inline;
-    margin: 10px; 
-  }
-
-  .contact-ul a {
-    color: #fafafa;
-  }
-
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-     
-    input {
-      width: 50%;
-    }
-
-    textarea {
-      width: 50%;
-    }
-
-  }
-
-  .bestSellers {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
   }
 
   a:hover {
     color: gray;
   }
+}
+
+.contest {
+  background-image: url("../images/contest.png");
+}
+
+@media (max-width: 576px) {
+ 
+  .shopAllBtns .link {
+    width: 100%;
+  }
 
   .product-card {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .product-card-side {
-    margin: 0 auto;
     width: 90%;
-    min-height: 50px;
-  }
-  .product-card-side li {
-    text-align: left;
+    margin: 0 auto;
   }
 
-  .absolute {
-    position: absolute;
-  }
-
-  .contestLink {
-    min-height: 300px;
+  .contact-form {
     width: 100%;
-    background: url('../images/contest.png') center center/cover no-repeat;
-    
+    text-align: center;
+
+    input {
+      width: 60%;
+    }
+
+    textarea {
+      width: 60%;
+    }
   }
 
-  .ul-order {
-    list-style-type: disc;
-  }
-  
-  .site-footer {
-    background: #000;
-    color: #fafafa;
-    margin-top: 20px;
-    padding: 10px;
-    min-height: 150px;
+  .shopAll {
+    background-image: url("../images/group3.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
   }
 
-  .footer-ul {
-    list-style-type: none;
+  .shopAllBtns {
     display: flex;
-    justify-content: center;
-
-    li {
-      display: inline;
-      margin:  10px;
-    }
-
-    a {
-      color: #fafafa;
-    }
-
-    a:hover {
-      color: gray;
-    }
+    flex-direction: column;
   }
-
-  .contest {
-    background-image: url("../images/contest.png");
-  }
-
-  @media (max-width: 576px) {
-
-    .product-card {
-      width: 90%;
-      margin: 0 auto;
-    }
-
-    .contact-form {
-      width: 100%;
-      text-align: center;
-
-      input {
-        width: 60%;
-      }
-
-      textarea {
-        width: 60%;
-      }
-
-    }
-
-    .shopAll {
-      background-image: url("../images/group3.jpeg");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position-x: center;
-    }
-
-    .shopAllBtns {
-      display: flex;
-      flex-direction: column;
-    }
-
-  }
-
-
-
-  
-
-
+}
