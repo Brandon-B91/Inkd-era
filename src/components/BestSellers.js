@@ -10,10 +10,10 @@ const BestSellers = () => (
       query={bestSellerQuery}
       render={(data) => (
         <div>
-          <Row className=" d-flex justify-content-center">
+          <Row className="d-flex justify-content-center">
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <div className="bestSellers">
-              <Card className="m-4 index-card" key={node.id}>
+              <Card className="m-4 mens-card" key={node.id}>
                 <Link to={node.fields.slug}>
                   <GatsbyImage
                     className="card-img-top"
