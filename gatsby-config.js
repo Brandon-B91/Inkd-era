@@ -23,7 +23,7 @@ module.exports = {
         sitemap: 'https://www.inkdera.com/sitemap.xml',
         policy: [{userAgent: '*', allow: '/'}]
       }
-    }
+    },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
