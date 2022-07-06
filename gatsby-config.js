@@ -16,14 +16,7 @@ module.exports = {
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-advanced-sitemap`,
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: 'https://www.inkdera.com',
-        sitemap: 'https://www.inkdera.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
-    },
+    `gatsby-plugin-robots-txt`,
     {
       resolve: "gatsby-plugin-manifest",
       options: {
