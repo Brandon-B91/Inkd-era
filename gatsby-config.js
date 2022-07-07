@@ -102,6 +102,15 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "GA-TRACKING_ID", process.env.GOOGLE_4  || "none"
+
+        ]
+      }
+    },
+    {
       resolve: `gatsby-plugin-mailchimp`,
       options: {
         endpoint: "https://Inkdera.us6.list-manage.com/subscribe/post?u=3637eeb82811147446f9ee9e0&amp;id=3194e8106d", // string; add your MC list endpoint here; see instructions below
