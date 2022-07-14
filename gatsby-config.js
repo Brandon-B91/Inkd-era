@@ -7,7 +7,9 @@ module.exports = {
     siteUrl: "https://www.inkdera.com",
     image: "/src/images/inkdEraLogoWhite.png",
     twitterUsername: "@InkdEra",
-    keywords: ["Inkd era, ink, tattoo, tattoo apparel, tattoo clothes, tattoo designs, tattoo culture, alternative styles."]
+    keywords: [
+      "Inkd era, ink, tattoo, tattoo apparel, tattoo clothes, tattoo designs, tattoo culture, alternative styles.",
+    ],
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -17,12 +19,12 @@ module.exports = {
     `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-advanced-sitemap`,
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: 'https://www.inkdera.com',
-        sitemap: 'https://www.inkdera.com/sitemap.xml',
-        policy: [{userAgent: '*', allow: '/'}]
-      }
+        host: "https://www.inkdera.com",
+        sitemap: "https://www.inkdera.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
     },
     {
       resolve: "gatsby-plugin-manifest",
@@ -72,7 +74,8 @@ module.exports = {
       resolve: `gatsby-plugin-snipcart-advanced`,
       options: {
         version: "3.0.29",
-        publicApiKey: "YmNjNDg4MjAtYjI0NS00ZTBjLTkxOTEtNjBhN2NmNzNmMDNlNjM3NDY0MDk2MTY2MzA1MTMz", // use public api key here or in environment variable
+        publicApiKey:
+          "YmNjNDg4MjAtYjI0NS00ZTBjLTkxOTEtNjBhN2NmNzNmMDNlNjM3NDY0MDk2MTY2MzA1MTMz", // use public api key here or in environment variable
         defaultLang: "en",
         currency: "usd",
         openCartOnAdd: true,
@@ -104,16 +107,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: [
-          "GA-TRACKING_ID", process.env.GOOGLE_4  || "none"
-
-        ]
-      }
+        trackingIds: ["GA-TRACKING_ID", process.env.GOOGLE_4 || "none"],
+        pluginConfig: {
+          head: true,
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-mailchimp`,
       options: {
-        endpoint: "https://Inkdera.us6.list-manage.com/subscribe/post?u=3637eeb82811147446f9ee9e0&amp;id=3194e8106d", // string; add your MC list endpoint here; see instructions below
+        endpoint:
+          "https://Inkdera.us6.list-manage.com/subscribe/post?u=3637eeb82811147446f9ee9e0&amp;id=3194e8106d", // string; add your MC list endpoint here; see instructions below
         timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
       },
     },
