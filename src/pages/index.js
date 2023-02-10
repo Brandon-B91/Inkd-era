@@ -7,7 +7,6 @@ import BestSellerSlider from "../components/BestSellerSlider";
 import "../styles/main.scss";
 
 const IndexPage = ({ data, location }) => {
-  
   return (
     <Layout>
       <SEO
@@ -34,41 +33,6 @@ const IndexPage = ({ data, location }) => {
       </div>
       <BestSellerSlider></BestSellerSlider>
       <div>
-        {/* {data.allMarkdownRemark.edges.map(({ node }) => {
-          const image = getImage(node.frontmatter.image);
-          return (
-            <div className="d-inline-flex">
-              <div className="flex-row">
-                <Card className="m-2 index-card" key={node.id}>
-                  <Link to={node.fields.slug}>
-                    <GatsbyImage
-                      className="card-img-top"
-                      image={image}
-                      alt={node.frontmatter.description}
-                    />
-                  </Link>
-                  <hr />
-                  <CardBody>
-                    <Link to={node.fields.slug}>
-                      <CardTitle className="h4 text-light text-wrap">
-                        {node.frontmatter.title}
-                      </CardTitle>
-                    </Link>
-                    <CardSubtitle>{node.frontmatter.description}</CardSubtitle>
-                    <CardSubtitle className="float-left mt-5">
-                      Price: ${node.frontmatter.price}
-                    </CardSubtitle>
-                    <CardSubtitle>
-                      <Badge color="danger float-right mt-5">
-                        {node.frontmatter.tag}
-                      </Badge>
-                    </CardSubtitle>
-                  </CardBody>
-                </Card>
-              </div>
-            </div>
-          );
-        })} */}
         <Link to="/Contest">
           <div className="contestLink d-flex flex-column justify-content-center mt-5 contestLink lazy">
             <h2 className="text-light"> Contests</h2>
@@ -111,9 +75,7 @@ export const query = graphql`
                 gatsbyImageData(
                   layout: CONSTRAINED
                   placeholder: BLURRED
-                  formats: [AUTO, JPG]
-                  width: 300
-                  height: 300
+                  height: 350
                   transformOptions: { cropFocus: CENTER }
                 )
               }

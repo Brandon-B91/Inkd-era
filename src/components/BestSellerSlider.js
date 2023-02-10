@@ -15,25 +15,25 @@ import "slick-carousel/slick/slick-theme.css";
 
 const settings = {
   autoplay: true,
-  autoplaySpeed: 5000,
-  arrows: true,
+  autoplaySpeed: 0,
+  arrows: false,
   className: "center",
   centerMode: true,
   dots: true,
   infinite: true,
-  speed: 800,
-  slidesToShow: 4,
+  speed: 7000,
+  slidesToShow: 3,
   slidesToScroll: 1,
   swipeToSlide: true,
-  easing: "linear",
+  cssEase: "linear",
   lazyLoad: "ondemand",
   responsive: [
     {
       breakpoint: 824,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
-        initialSlide: 1,
+        initialSlide: 0,
       },
     },
     {
@@ -41,7 +41,7 @@ const settings = {
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-        initialSlide: 1,
+        initialSlide: 0,
       },
     },
     {
@@ -49,6 +49,7 @@ const settings = {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        initialSlide: 0,
       },
     },
   ],
@@ -72,14 +73,13 @@ const BestSeller = () => (
                     loading="lazy"
                   />
                 </Link>
-                <hr />
                 <CardBody>
                   <Link to={node.fields.slug}>
                     <CardTitle className="h5 text-light text-wrap">
                       {node.frontmatter.title}
                     </CardTitle>
                   </Link>
-                  <CardSubtitle>{node.frontmatter.description}</CardSubtitle>
+                  <CardSubtitle className="mt-5">{node.frontmatter.description}</CardSubtitle>
                 </CardBody>
                 <CardFooter>
                   <CardSubtitle className="float-left d-inline price">
@@ -127,8 +127,6 @@ const BestSellerSlider = graphql`
                 gatsbyImageData(
                   layout: CONSTRAINED
                   placeholder: BLURRED
-                  width: 300
-                  height: 300
                   transformOptions: { cropFocus: CENTER }
                 )
               }

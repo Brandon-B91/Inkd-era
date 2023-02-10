@@ -47,7 +47,7 @@ function Email() {
         </span>
       </div>
       <button
-        style={{ width: "50%", maxWidth: "345px" }}
+        style={{ width: "47%"}}
         type="submit"
         onClick={handleSubmit}
         className="btn btn-danger text-uppercase mt-4 mb-4"

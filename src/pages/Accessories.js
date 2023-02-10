@@ -112,8 +112,7 @@ export const query = graphql`
                   layout: CONSTRAINED
                   placeholder: BLURRED
                   formats: [AUTO, JPG]
-                  width: 300
-                  height: 300
+                  height: 350
                   transformOptions: { fit: COVER, cropFocus: CENTER }
                 )
               }

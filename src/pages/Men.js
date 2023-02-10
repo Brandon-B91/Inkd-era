@@ -37,7 +37,6 @@ const MensStyles = ({ data, location }) => {
                       loading="lazy"
                     />
                   </Link>
-                  <hr />
                   <CardBody>
                     <Link to={node.fields.slug}>
                       <CardTitle className="h4 text-light text-wrap">
@@ -102,9 +101,8 @@ export const query = graphql`
                   layout: CONSTRAINED
                   placeholder: BLURRED
                   formats: [AUTO, JPG]
-                  width: 300
-                  height: 300
-                  transformOptions: { fit: COVER, cropFocus: CENTER }
+                  height: 350
+                  transformOptions: { fit: FILL, cropFocus: CENTER }
                 )
               }
             }

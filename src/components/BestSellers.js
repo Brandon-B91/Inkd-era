@@ -75,8 +75,6 @@ const bestSellerQuery = graphql`
                   layout: CONSTRAINED
                   placeholder: BLURRED
                   formats: [AUTO, JPG]
-                  width: 300
-                  height: 300
                   transformOptions: { fit: COVER, cropFocus: CENTER }
                 )
               }
