@@ -28,12 +28,10 @@ const ProductPage = ({ data, pageContext, location }) => {
   const src = getSrc(post.frontmatter.image);
 
   const settings = {
-    // autoplay: false,
-    // autoplaySpeed: 2500,
     arrows: true,
     dots: true,
     infinite: true,
-    speed: 800,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
