@@ -139,10 +139,9 @@ a:hover {
   flex-direction: column;
 }
 
-.shopAll > h1, h2,
+.shopAll h2,
 h3 {
   color: white;
-  animation: 1s ease .5s fade-in;
 }
 
 .shopAllBtns {
@@ -352,13 +351,6 @@ a:hover {
 // Keyframes
 
 @keyframes fade-in {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(0%);
-    opacity: 1;
-  }
+0% { transform: translateY(100%); opacity: 0;}
+100% { transform: translateY(0%); opacity: 1;}
 }
