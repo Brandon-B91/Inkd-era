@@ -20,15 +20,15 @@ function Email() {
   const handleChange = (event) => setEmail(event.target.value);
 
   return (
-    <Form>
+    <Form className=" d-flex flex-column flex-sm-wrap">
       <p className="m-3">
         Sign Up for our newsletter and get notified when we drop new merch or
         contests!
       </p>
       <div>
         <Input
-          style={{ width: "90%", margin: "0 auto", maxWidth: "500px" }}
-          className="email-form"
+          style={{ width: "40%", margin: "0 auto", maxWidth: "500px" }}
+          className="email-form d-inline"
           type="email"
           onChange={handleChange}
           value={email}
@@ -45,15 +45,15 @@ function Email() {
         >
           {message}
         </span>
+        <button
+          // style={{width: "30%"}}
+          type="submit"
+          onClick={handleSubmit}
+          className="btn btn-danger text-uppercase mt-4 mb-4 form-button"
+        >
+          Subscribe
+        </button>
       </div>
-      <button
-        style={{ width: "47%"}}
-        type="submit"
-        onClick={handleSubmit}
-        className="btn btn-danger text-uppercase mt-4 mb-4"
-      >
-        Subscribe
-      </button>
     </Form>
   );
 }

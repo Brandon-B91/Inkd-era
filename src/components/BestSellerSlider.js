@@ -127,7 +127,9 @@ const BestSellerSlider = graphql`
                 gatsbyImageData(
                   layout: CONSTRAINED
                   placeholder: BLURRED
-                  transformOptions: { cropFocus: CENTER }
+                  transformOptions: { fit: COVER, cropFocus: CENTER }
+                  height: 300
+                  width: 200
                 )
               }
             }

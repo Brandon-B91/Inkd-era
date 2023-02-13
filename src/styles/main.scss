@@ -25,7 +25,7 @@ textarea {
 body {
   background-color: #333;
   font-family: "Roboto", sans-serif;
-  margin: 0; 
+  margin: 0;
   padding: 0;
 }
 
@@ -103,7 +103,7 @@ a:hover {
 }
 
 .index-card {
-  height: 500px;
+  height: 400px;
 }
 
 .wide-card {
@@ -139,14 +139,25 @@ a:hover {
   flex-direction: column;
 }
 
-.shopAll h2,
+.shopAll > h1, h2,
 h3 {
   color: white;
+  animation: 1s ease .5s fade-in;
 }
 
 .shopAllBtns {
   display: flex;
   flex-direction: row;
+}
+
+.btn1 {
+  animation: 1.2s linear 1s fade-in;
+}
+.btn2 {
+  animation: 1.2s linear 1.2s fade-in;
+}
+.btn3 {
+  animation: 1.2s linear 1.4s fade-in;
 }
 
 .link {
@@ -157,12 +168,13 @@ h3 {
   border-radius: 1000px;
   width: 125px;
   text-align: center;
+  transition: 0.3s ease-in-out;
 }
 
 .link:hover {
   background-color: rgba(255, 255, 255, 0.3);
   color: white;
-  transform: translateY(-3px);
+  transform: translateY(-5px);
 }
 
 .slick-dots li button:before {
@@ -276,7 +288,6 @@ a:hover {
 }
 
 @media (max-width: 576px) {
-
   .container #content {
     margin-top: 0px;
     margin-bottom: 100px;
@@ -326,9 +337,28 @@ a:hover {
     flex-direction: column;
   }
 
+  .form-button {
+    width: 100%;
+  }
+
   .bottom-nav {
     position: fixed;
     bottom: 0;
     left: 0;
+  }
+}
+
+
+// Keyframes
+
+@keyframes fade-in {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0%);
+    opacity: 1;
   }
 }

@@ -53,7 +53,7 @@ const Footer = () => {
         </ul>
       </div>
       <Email className=""></Email>
-      <ul className="d-flex flex-row justify-content-around p-0 mr-1 ml-">
+      <ul className="d-flex flex-row justify-content-around p-0 mr-1">
         <li className="mr-2">
           <Link to="/info-pages/orderProcessing" className="text-light">
             Order processing
