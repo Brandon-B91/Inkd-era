@@ -150,13 +150,19 @@ h3 {
 }
 
 .btn1 {
-  animation: 1.2s linear 1s fade-in;
+  animation: 1.2s forwards linear 1s fade-in;
+  opacity: 0;
+
 }
 .btn2 {
-  animation: 1.2s linear 1.2s fade-in;
+  animation: 1.2s forwards linear 1.2s fade-in;
+  opacity: 0;
+
 }
 .btn3 {
-  animation: 1.2s linear 1.4s fade-in;
+  animation: 1.2s forwards linear 1.4s fade-in;  opacity: 0;
+  opacity: 0;
+
 }
 
 .link {
