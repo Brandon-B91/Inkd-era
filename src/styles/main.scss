@@ -139,9 +139,11 @@ a:hover {
   flex-direction: column;
 }
 
-.shopAll h2,
-h3 {
+.shopAll > * {
+  opacity: 0;
   color: white;
+  animation: 1.2s forwards linear .8s fade-in;
+
 }
 
 .shopAllBtns {
@@ -150,17 +152,17 @@ h3 {
 }
 
 .btn1 {
-  animation: 1.2s forwards linear 1s fade-in;
+  animation: 1s forwards linear 1s fade-in;
   opacity: 0;
 
 }
 .btn2 {
-  animation: 1.2s forwards linear 1.2s fade-in;
+  animation: 1s forwards linear 1.2s fade-in;
   opacity: 0;
 
 }
 .btn3 {
-  animation: 1.2s forwards linear 1.4s fade-in;  opacity: 0;
+  animation: 1s forwards linear 1.4s fade-in;  opacity: 0;
   opacity: 0;
 
 }
