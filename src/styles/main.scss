@@ -102,6 +102,12 @@ a:hover {
   }
 }
 
+.snipcart-checkout {
+  border: none ;
+  color: #fafafa;
+  outline: none;
+}
+
 .index-card {
   height: 400px;
 }
@@ -315,6 +321,10 @@ a:hover {
   color: #fafafa;
   border-radius: 50%;
   z-index: 99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
   .full-page {
