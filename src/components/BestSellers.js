@@ -1,7 +1,15 @@
 import React from "react";
 import { graphql, StaticQuery, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { Badge, Card, CardBody, CardTitle, CardSubtitle, Row } from "reactstrap";
+import {
+  Badge,
+  Card,
+  CardBody,
+  CardFooter,
+  CardTitle,
+  CardSubtitle,
+  Row,
+} from "reactstrap";
 
 const BestSellers = () => (
   <div>
@@ -11,36 +19,37 @@ const BestSellers = () => (
       render={(data) => (
         <div>
           <Row className="d-flex justify-content-center">
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <div className="bestSellers">
-              <Card className="m-4 mens-card" key={node.id}>
-                <Link to={node.fields.slug}>
-                  <GatsbyImage
-                    className="card-img-top"
-                    image={getImage(node.frontmatter.image)}
-                    alt={node.frontmatter.description}
-                  />
-                </Link>
-                <hr />
-                <CardBody>
+            {data.allMarkdownRemark.edges.map(({ node }) => (
+              <div className="bestSellers">
+                <Card className="m-4 mens-card" key={node.id}>
                   <Link to={node.fields.slug}>
-                    <CardTitle className="h4 text-light text-wrap">
-                      {node.frontmatter.title}
-                    </CardTitle>
+                    <GatsbyImage
+                      className="card-img-top"
+                      image={getImage(node.frontmatter.image)}
+                      alt={node.frontmatter.description}
+                    />
                   </Link>
-                  <CardSubtitle>{node.frontmatter.description}</CardSubtitle>
-                  <CardSubtitle className="float-left mt-5">
-                    Price: ${node.frontmatter.price}
-                  </CardSubtitle>
-                  <CardSubtitle>
-                    <Badge color="danger float-right mt-5">
-                      {node.frontmatter.tag}
-                    </Badge>
-                  </CardSubtitle>
-                </CardBody>
-              </Card>
-            </div>
-          ))}
+                  <CardBody>
+                    <Link to={node.fields.slug}>
+                      <CardTitle className="h4 text-light text-wrap">
+                        {node.frontmatter.title}
+                      </CardTitle>
+                    </Link>
+                    <CardSubtitle>{node.frontmatter.description}</CardSubtitle>
+                  </CardBody>
+                  <CardFooter>
+                    <CardSubtitle className="float-left mt-5">
+                      Price: ${node.frontmatter.price}
+                    </CardSubtitle>
+                    <CardSubtitle>
+                      <Badge color="danger float-right mt-5">
+                        {node.frontmatter.tag}
+                      </Badge>
+                    </CardSubtitle>
+                  </CardFooter>
+                </Card>
+              </div>
+            ))}
           </Row>
         </div>
       )}
